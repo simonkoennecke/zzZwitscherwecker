@@ -2,7 +2,7 @@ The following Section is for a course at Freie Universität.
 
 # Data Sources
 
-The sound files from [[http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN|species-id.net]] we focus on the sound files of birds.
+The sound files from [a species-id.net](http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN) we focus on the sound files of birds.
 
 The additional source is simple the dbpedia.org.
 
@@ -26,9 +26,9 @@ With all the information, we generate a new XML file. Therefore we used this lit
 
 # Thumbnails and Abstracts from DBPedia
 
-We downloaded thumbnails and abstracts of birds from [[http://dbpedia.org/|DBPedia]], using [[http://dbpedia.org/sparql|SPARQL Editor]], with the following script:
+We downloaded thumbnails and abstracts of birds from DBPedia, using [a SPARQL Editor](http://dbpedia.org/sparql), with the following script:
 
-```Sparql
+```sql
 PREFIX d: <http://dbpedia.org/ontology/>
 PREFIX ds: <http://dbpedia.org/resource/>
 PREFIX prop: <http://dbpedia.org/property/>
