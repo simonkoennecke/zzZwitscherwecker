@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="de.farbtrommel.zwitscherwecker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>zzZwitscherwecker</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="luat@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
+        Simon Koennecke		
+    </author>
+    <content src="index.html" />
+	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.2" />
+    <access origin="*" />
+</widget>
