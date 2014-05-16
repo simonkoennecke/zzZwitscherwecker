@@ -1,32 +1,113 @@
-The following Section is for a course at Freie Universität.
+The following section is for a course at Freie Universität Berlin.
 
-# Data Sources
+# Data Extraction and Processing
 
-The sound files from [species-id.net](http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN) we focus on the sound files of birds.
+## Data Sources
 
-The additional source is simple the dbpedia.org.
+The sound files are from [species-id.net](http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN).
+We focus on the sound files of birds.
+
+An additional source is dbpedia.org.
 
 
-# Data Source Retrieval from species-id.net
+## Retrieving Data from ‘species-id.net’
 
-In the first place we retrieved the sound files from the species-id.net, we used following url:
+Firstly, we retrieve the sound files from the species-id.net, using the following URL:
 
 http://species-id.net/o/api.php?action=query&export&format=xml&cmtitle=Category:Media_by_Tierstimmenarchiv_MfN&prop=revisions&rvprop=content&list=categorymembers&cmlimit=700
 
-With a simple script, we downloaded for each file a detailed version of the file:
+With a simple script, we download a detailed version of each file:
 
 http://species-id.net/o/api.php?action=query&export&format=xml&exportnowrap&titles=%FILENAME%
 
-With all the information, we generate a new XML file. Therefore we used this little script:
+Now, with all the information, we can generate a new XML file. The PHP script is as follows:
 
 ```php
+<?php
+#
+# The Script loads all media files from species-id.net into a csv file
+#
+set_time_limit (3600*10);
+#
+# Crawl all media files from the category Media_by_Tierstimmenarchiv_MfN
+#
+$cat = "http://species-id.net/o/api.php?action=query&export&format=xml&cmtitle=Category:Media_by_Tierstimmenarchiv_MfN&prop=revisions&rvprop=content&list=categorymembers&cmlimit=700";
+#
+# Show detials of the file
+#
+$ApiFile = "http://species-id.net/o/api.php?action=query&export&format=xml&exportnowrap&titles=";
+#
+# Path to object source of a mediawiki upload item
+#
+$dllink = "http://species-id.net/o/media/";
 
+if(is_file(getcwd()."\\cat.xml")){
+	$c  = file_get_contents($cat);
+	file_put_contents(getcwd()."\\cat.xml", $c);
+}
+else{
+	$c  = file_get_contents("cat.xml");
+}
+#Loaded XML
+$xml = new SimpleXMLElement($c);
+#Output XML
+$o = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"utf-8\" ?><files></files>");
+
+
+#
+# Output data frame
+#
+$cnt = count($xml->query->categorymembers[0]);
+for($i=0; $i < $cnt; $i++){
+	
+	$filename = $xml->query->categorymembers[0]->cm[$i]["title"][0];
+	$fileId = $xml->query->categorymembers[0]->cm[$i]["pageid"][0];
+	
+	#is already on disk?
+	$tmpFilename = getcwd()."\\".$fileId.".xml";
+	if(is_file($tmpFilename)){
+		$f = file_get_contents($tmpFilename);
+	}
+	else{
+		$f = file_get_contents($ApiFile.$filename);
+		file_put_contents($tmpFilename, $f);
+	}
+	
+	#Add file to output xml
+	$xmlFile = $o->addChild('file');
+	
+	#Parse file information
+	$x = new SimpleXMLElement($f);
+	
+	#prepare download path
+	$dlurl = str_replace(" ","_",str_replace("File:","", $filename));
+	$md = md5($dlurl);
+	
+	$xmlFile->PageId = $fileId;
+	$xmlFile->DownloadLink = $dllink.$md[0]."/".$md[0].$md[1]."/".$dlurl;
+	$xmlFile->PageLink = "http://species-id.net/openmedia/".urlencode($filename);
+	$xmlFile->ApiLink =  $ApiFile.urlencode($filename);
+	$xmlFile->Filename =  $filename;
+	
+	# Meta Tag isn't in a xml format parse with reg. expression the value
+	$pattern = '/\|\s*(.*)\s*=\s*(.*)\s*/';
+	$str = str_replace("Length = ","Length: ", $x->page->revision->text);
+	preg_match_all($pattern, $str, $matches);
+	for($j=0; $j < count($matches[1]);$j++){
+		$xmlFile->addChild(str_replace(" ","",$matches[1][$j]),  $matches[2][$j]);
+	}
+}
+
+file_put_contents(getcwd()."\\output.xml", $o->asXML());
+
+echo $o->asXML();
+?>
 ```
 
 
-# Thumbnails and Abstracts from DBPedia
+## Getting Thumbnails and Abstracts from ‘DBpedia’
 
-We downloaded thumbnails and abstracts of birds from DBPedia, using [SPARQL Editor](http://dbpedia.org/sparql), with the following script:
+We, then, download thumbnails and abstracts of birds from DBpedia, using [SPARQL Editor](http://dbpedia.org/sparql), with the following script:
 
 ```sql
 PREFIX d: <http://dbpedia.org/ontology/>
@@ -34,37 +115,37 @@ PREFIX ds: <http://dbpedia.org/resource/>
 PREFIX prop: <http://dbpedia.org/property/>
 PREFIX url: <http://www.w3.org/2002/07/owl>
 select distinct 
-?p, ?tn, ?binomial, ?abstract
+?p, ?thumbnail, ?binomial, ?abstract
 where {
 ?p d:class ds:Bird;
-   d:thumbnail ?tn;
+   d:thumbnail ?thumbnail;
    d:abstract ?abstract;
-   dbpprop:binomial ?binomial .
+   dbpprop:binomial ?binomial.
     FILTER(regex(?binomial, "^anser anser$", "i")).
     filter(langMatches(lang(?abstract), "DE"))} LIMIT 1000
 ```
 
-# Creation of XML Database 
+## Creating an XML Database 
 
-We used for our project an application called ‘BaseX’.
+For this project, we used an application called ‘BaseX’.
 
-## Insert Data
-
-```XQuery
-```
-
-## Query Data
+### Inserting Data
 
 ```XQuery
 ```
 
+### Querying Data
 
-# Create the XML File of Our Application
+```XQuery
+```
 
-## XML Schema
 
-The first step ist to look what we need. Here is an example:
-```{XML}
+## Creating an XML File for Our Application
+
+### XML Schema
+
+The first step is to look at what we need. Here is an example:
+```XML
 <?xml version='1.0' encoding='utf-8' ?>	
 <voegel xmlns='./VogelQuiz.xsd'>
 	<vogel>
@@ -76,7 +157,7 @@ The first step ist to look what we need. Here is an example:
 </voegel>
 ```
 
-To validate we wrote the XSD:
+To validate it, we write an XML Scheme:
 
 ```XML
 <?xml version='1.0' encoding='utf-8' ?>
@@ -101,6 +182,6 @@ To validate we wrote the XSD:
 </xs:element>
 ```
 
-## XSLT merge the given files to one
+### XSLT: Merging the Given Files into One
 
 
