@@ -1,22 +1,4 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -36,40 +18,100 @@
     <h1>zzZwitscherwecker</h1>
   </div>
 	<div data-role="controlgroup">
-		<a href="#einstellung" data-role="button">Einstellung</a>
-		<a href="#quiz" data-role="button">Quiz spielen</a>
-		<a href="#information" data-role="button">Information</a>
+		<a href="#einstellung" data-role="button" data-icon="clock">Einstellung</a>
+		<a href="#quiz" data-role="button" data-icon="forward">Quiz spielen</a>
+		<a href="#information" data-role="button" data-icon="info">Information</a>
+		<a href="#alarm" data-role="button" data-icon="alert">Alarm (only visible in developer mode)</a>
 	</div>
 </div>
  
 <div data-role="page" id="einstellung">
   <div data-role="header">
-    <h1>Einstellung</h1>
-	<a href="index.html" data-icon="arrow-r" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text">Zurück</span><span class="ui-icon ui-icon-arrow-l ui-icon-shadow" data-icon="arrow-l">&nbsp;</span></span></a>
+    <h1>zzZwitscherwecker | Einstellung</h1>
+	<a href="index.html" data-icon="bars">Menu</a>
   </div>
   <div data-role="content">
-    <label for="flip-checkbox-4">Flip toggle switch checkbox:</label>
-    <input type="checkbox" data-role="flipswitch" name="status" id="status" checked="">
-	
-	<a href="#page1" data-role="button" data-inline="true">Go to Page 1</a>
-    <input type="button" value="Which Page is this?" class="myButton" data-inline="true"/> <br>
-    <div class="myResult">The result will be displayed here</div>
+    <form id="enstellung">
+		<input type="checkbox" class="right" data-role="flipswitch" name="status" id="status" checked="">
+		<input type="text" name="label" id="label" value="" placeholder="Label" data-clear-btn="true">
+		<input type="time" name="time" id="time"/>
+		<div data-role="controlgroup" data-type="horizontal">
+		  <a href="#" class="ui-btn ui-corner-all">Mo</a>
+		  <a href="#" class="ui-btn ui-corner-all">Di</a>
+		  <a href="#" class="ui-btn ui-corner-all">Mi</a>
+		  <a href="#" class="ui-btn ui-corner-all">Do</a>
+		  <a href="#" class="ui-btn ui-corner-all">Fr</a>
+		  <a href="#" class="ui-btn ui-corner-all">Sa</a>
+		  <a href="#" class="ui-btn ui-corner-all">So</a>
+		</div>
+	</form>
   </div>
 </div>
  
  
 <div data-role="page" id="quiz">
   <div data-role="header">
-    <h1>Quiz</h1>
-	<a href="index.html" data-icon="gear" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-left ui-btn-up-a"><span class="ui-btn-inner"><span class="ui-btn-text">Zurück</span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></a>
+    <h1>zzZwitscherwecker | Quiz</h1>
+	<a href="index.html" data-icon="bars">Menu</a>
   </div>
   <div data-role="content">
-    <a href="#page1" data-role="button" data-inline="true">Go to Page 1</a>
-    <input type="button" value="Which Page is this?" class="myButton" data-inline="true"/> <br>
-    <div class="myResult">The result will be displayed here</div>
+	<audio controls>
+		<source src="horse.mp3" type="audio/mpeg">
+		Your mobile does not support the audio element.
+	  </audio>
+    <div class="ui-grid-a">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+	</div>
+	<div class="ui-grid-a">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block D</div></div>
+	</div>
   </div>
 </div>
- 
+
+<div data-role="page" id="alarm">
+  <div data-role="header">
+    <h1>zzZwitscherwecker</h1>	
+  </div>
+  <div data-role="content">
+  <audio controls>
+	<source src="horse.mp3" type="audio/mpeg">
+	Your mobile does not support the audio element.
+  </audio>
+    <div class="ui-grid-a">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+	</div>
+	<div class="ui-grid-a">
+		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
+		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block D</div></div>
+	</div>
+  </div>
+</div>
+
+
+<div data-role="page" id="information">
+  <div data-role="header">
+    <h1>zzZwitscherwecker | Information</h1>
+	<a href="index.html" data-icon="bars">Menu</a>
+  </div>
+  <div data-role="content">
+	<div data-role="collapsible" data-content-theme="false">
+		<h4>Autoren</h4>
+		<p>I'm the collapsible content without a theme.</p>
+	</div>
+	<div data-role="collapsible" data-content-theme="false">
+		<h4>Credential</h4>
+		<p>I'm the collapsible content without a theme.</p>
+	</div>
+	<div data-role="collapsible" data-content-theme="false">
+		<h4>Datenschutz</h4>
+		<p>I'm the collapsible content without a theme.</p>
+	</div>
+  </div>
+</div>
+  
         <script type="text/javascript" src="cordova.js"></script>
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/jquery.mobile-1.4.2.min.js"></script>
