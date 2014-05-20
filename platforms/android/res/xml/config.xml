@@ -4,15 +4,6 @@
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
-    <name>zzZwitscherwecker</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -32,4 +23,14 @@
     <feature name="LocalNotification">
         <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
     </feature>
+    <name>zzZwitscherwecker</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="luat@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
+        Simon Koennecke		
+    </author>
+    <content src="index.html" />
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.2" />
+    <access origin="*" />
 </widget>
