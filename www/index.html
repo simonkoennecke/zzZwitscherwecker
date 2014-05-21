@@ -31,18 +31,19 @@
 	<a href="index.html" data-icon="bars">Menu</a>
   </div>
   <div data-role="content">
-    <form id="enstellung">
-		<input type="checkbox" class="right" data-role="flipswitch" name="status" id="status" checked="">
+    <form id="settings">
+		<input type="checkbox" class="right" data-role="flipswitch" name="status" id="status" checked="" value="on">
 		<input type="text" name="label" id="label" value="" placeholder="Label" data-clear-btn="true">
 		<input type="time" name="time" id="time"/>
 		<div data-role="controlgroup" data-type="horizontal">
-		  <a href="#" class="ui-btn ui-corner-all">Mo</a>
-		  <a href="#" class="ui-btn ui-corner-all">Di</a>
-		  <a href="#" class="ui-btn ui-corner-all">Mi</a>
-		  <a href="#" class="ui-btn ui-corner-all">Do</a>
-		  <a href="#" class="ui-btn ui-corner-all">Fr</a>
-		  <a href="#" class="ui-btn ui-corner-all">Sa</a>
-		  <a href="#" class="ui-btn ui-corner-all">So</a>
+		  <input type="button" class="ui-btn ui-corner-all" value="Mo"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="Di"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="Mi"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="Do"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="Fr"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="Sa"/>
+		  <input type="button" class="ui-btn ui-corner-all" value="So"/>
+		  <input type="hidden" value="" name="day[]"/>
 		</div>
 	</form>
   </div>
@@ -116,6 +117,7 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/jquery.mobile-1.4.2.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/alarm.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>

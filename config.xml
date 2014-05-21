@@ -4,10 +4,9 @@
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="luat@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
+    <author email="laut@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
         Simon Koennecke		
     </author>
-    <content src="index.html" />
-	<gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.2" />
+    <content src="index.html" />	
     <access origin="*" />
 </widget>
