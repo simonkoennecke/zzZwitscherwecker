@@ -1,0 +1,82 @@
+<birds>
+    <bird id="1">
+        <name>Dunkelente</name>
+        <sciname>Anas rubripes</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Blackduck.jpg/200px-Blackduck.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+ <bird id="2">
+        <name>Grünwaldsänger</name>
+        <sciname>Setophaga virens</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/BlackthroatedGreenWarbler08.jpg/200px-BlackthroatedGreenWarbler08.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+ <bird id="3">
+        <name>Schwarzflügel-Brachschwalbe</name>
+        <sciname>Glareola nordmanni</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Naumann_Glareola_pratincola_Glareola_nordmanni.jpg/200px-Naumann_Glareola_pratincola_Glareola_nordmanni.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+ <bird id="4">
+        <name>Birkhuhn</name>
+        <sciname>Tetrao tetrix</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Black_Grouse_Nationalpark_Bayerischer_Wald.jpg/200px-Black_Grouse_Nationalpark_Bayerischer_Wald.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+ <bird id="5">
+        <name>Blaukehlchen</name>
+        <sciname>Luscinia svecica</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Luscinia_svecica_volgae.jpg/200px-Luscinia_svecica_volgae.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+ <bird id="6">
+        <name>Brahminenweih</name>
+        <sciname>Haliastur indus</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Haliastur_indus_-Karratha,_Pilbara,_Western_Australia,_Australia-8_(1).jpg/200px-Haliastur_indus_-Karratha,_Pilbara,_Western_Australia,_Australia-8_(1).jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+<bird id="7">
+        <name>Büffelkopfente</name>
+        <sciname>Bucephala albeola</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Bucephala-albeola-007.jpg/200px-Bucephala-albeola-007.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+<bird id="8">
+        <name>Kaninchenkauz</name>
+        <sciname>Athene cunicularia</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Burrowing_Owl_4354.jpg/200px-Burrowing_Owl_4354.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+<bird id="9">
+        <name>Schopfwachtel</name>
+        <sciname>Aythya valisineria</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/California_quail.jpg/200px-California_quail.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+<bird id="10">
+        <name>Riesentafelente</name>
+        <sciname>Aythya valisineria</sciname>
+        <img src="url">http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Canvasback.arp.750pix.jpg/200px-Canvasback.arp.750pix.jpg</img>
+        <link>http://de.wikipedia.org/...</link>
+        <mp3 src="path" length=""></mp3>
+        <abs>short abstract ...</abs>
+    </bird>
+</birds>
