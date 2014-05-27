@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd">
- <head>
+<!--sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd"-->
+<!-- <head>
   <variable name="p"/>
   <variable name="thumbnail"/>
   <variable name="binomial"/>
   <variable name="abstract"/>
   <variable name="links"/>
  </head>
+-->
  <results distinct="false" ordered="true">
   <result>
    <binding name="p"><uri>http://dbpedia.org/resource/American_Black_Duck</uri></binding>
@@ -4342,4 +4343,4 @@
    <binding name="links"><uri>http://de.dbpedia.org/resource/Rotkopfente</uri></binding>
   </result>
  </results>
-</sparql>
+ <!--/sparql-->

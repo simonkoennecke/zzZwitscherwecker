@@ -136,17 +136,313 @@ For this project, we used an application called ‘BaseX’.
 
 ### Query Data
 
-30 Birds from "output.xml"
+30 Birds with medium-length mp3s from "output.xml"
 ```XQuery
 for $y in doc('/Users/yena/git/zzZwitscherwecker/docs/birdlist.xml')/skip/abbr
 for $x in doc('/Users/yena/git/zzZwitscherwecker/docs/output.xml')/files/file
-where $x/ScientificNames=$y
-return <birds><bird id="{data($x/PageId)}"><name>{data($x/CommonNames)}</name><sciname>{data($x/ScientificNames)}</sciname></bird></birds>
+where $x/ScientificNames=$y and substring-after(data($x/Filename), '-')='medium.mp3'
+return (<birds><bird id="{data($x/PageId)}">
+<name>{data($x/CommonNames)}</name>
+<sciname>{data($x/ScientificNames)}</sciname>
+<mp3 src="mp3/{data($x/PageId)}" length="{substring-before(substring-after(data($x/Description), ': '), ')')}"></mp3></bird></birds>)
 ```
 
 30 Birds from "dbpedia.xml"
 ```XQuery
+for $y in doc('/Users/yena/git/zzZwitscherwecker/docs/birdlist.xml')/skip/abbr
+for $z in doc('/Users/yena/git/zzZwitscherwecker/docs/dbpedia.xml')/results/result
+where data($z/binding[@name='binomial'])=$y
+return (<birds><img src="{data($z/binding[@name='thumbnail']/uri)}" />
+<link>{replace(data($z/binding[@name='links']/uri), 'dbpedia.org/resource', 'wikipedia.org/wiki')}</link></birds>)
 ```
+
+Now, 30 Birds from both "output.xml" and "dbpedia.xml"
+```XQuery
+for $y at $i in doc('/Users/yena/git/zzZwitscherwecker/docs/birdlist.xml')/skip/abbr
+for $x in doc('/Users/yena/git/zzZwitscherwecker/docs/output.xml')/files/file
+for $z in doc('/Users/yena/git/zzZwitscherwecker/docs/dbpedia.xml')/results/result
+where $x/ScientificNames=$y and substring-after(data($x/Filename), '-')='medium.mp3' and data($z/binding[@name='binomial'])=$y
+return (<birds><bird id="{$i}">
+<name>{data($x/CommonNames)}</name>
+<sciname>{data($x/ScientificNames)}</sciname>
+<img src="{data($z/binding[@name='thumbnail']/uri)}" />
+<link>{replace(data($z/binding[@name='links']/uri), 'dbpedia.org/resource', 'wikipedia.org/wiki')}</link>
+<mp3 src="mp3/{data($x/PageId)}" length="{substring-before(substring-after(data($x/Description), ': '), ')')}"></mp3></bird></birds>)
+```
+Then, we get the following data:
+```xml
+<birds>
+  <bird id="1">
+    <name>Uhu</name>
+    <sciname>Bubo bubo</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Uhu-muc.jpg/200px-Uhu-muc.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Uhu</link>
+    <mp3 src="mp3/212696" length="0:27"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="2">
+    <name>Blaukehlchen</name>
+    <sciname>Luscinia svecica</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Luscinia_svecica_volgae.jpg/200px-Luscinia_svecica_volgae.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Blaukehlchen</link>
+    <mp3 src="mp3/212893" length="Gesang, teilweise im Flug vorgetragen (HG: Teichralle, Rothalstaucher, Blessralle, Rohrschwirl, Rohrdommel, Erdkröte, Wasserralle"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="3">
+    <name>Heidelerche</name>
+    <sciname>Lullula arborea</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lullula_arborea_Rodrigo)de_Almeida.jpg/200px-Lullula_arborea_Rodrigo)de_Almeida.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Heidelerche</link>
+    <mp3 src="mp3/212933" length="0:22"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="4">
+    <name>Steinkauz</name>
+    <sciname>Athene noctua</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mochuelo_Común_(_Athene_noctua_)(1).jpg/200px-Mochuelo_Común_(_Athene_noctua_)(1).jpg"/>
+    <link>http://de.wikipedia.org/wiki/Steinkauz</link>
+    <mp3 src="mp3/212812" length="0:22"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="5">
+    <name>Pirol</name>
+    <sciname>Oriolus oriolus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oriole_2.jpg/200px-Oriole_2.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Pirol_(Art)</link>
+    <mp3 src="mp3/212513" length="0:22"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="6">
+    <name>Singschwan</name>
+    <sciname>Cygnus cygnus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Singschwan.jpg/200px-Singschwan.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Singschwan</link>
+    <mp3 src="mp3/212989" length="Rufe (Length: 0:24"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="7">
+    <name>Gartenrotschwanz</name>
+    <sciname>Phoenicurus phoenicurus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gekraagde_Roodstaart_20040627.JPG/200px-Gekraagde_Roodstaart_20040627.JPG"/>
+    <link>http://de.wikipedia.org/wiki/Gartenrotschwanz</link>
+    <mp3 src="mp3/212494" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="8">
+    <name>Nachtigall</name>
+    <sciname>Luscinia megarhynchos</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nachtigall_(Luscinia_megarhynchos)-2.jpg/200px-Nachtigall_(Luscinia_megarhynchos)-2.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Nachtigall</link>
+    <mp3 src="mp3/212709" length="0:32"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="9">
+    <name>Silbermöwe</name>
+    <sciname>Larus argentatus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Larus_argentatus01.jpg/200px-Larus_argentatus01.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Silbermöwe</link>
+    <mp3 src="mp3/212901" length="0:19"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="10">
+    <name>Fitis</name>
+    <sciname>Phylloscopus trochilus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Willow_Warbler_Phylloscopus_trochilus.jpg/200px-Willow_Warbler_Phylloscopus_trochilus.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Fitis</link>
+    <mp3 src="mp3/212590" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="11">
+    <name>Stieglitz</name>
+    <sciname>Carduelis carduelis</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Carcar.jpg/200px-Carcar.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Stieglitz</link>
+    <mp3 src="mp3/212982" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="12">
+    <name>Feldsperling</name>
+    <sciname>Passer montanus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tree_Sparrow_Japan_Flip.jpg/200px-Tree_Sparrow_Japan_Flip.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Feldsperling</link>
+    <mp3 src="mp3/212589" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="13">
+    <name>Goldammer</name>
+    <sciname>Emberiza citrinella</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg/200px-Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Goldammer</link>
+    <mp3 src="mp3/212878" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="14">
+    <name>Zilpzalp, Weidenlaubsänger</name>
+    <sciname>Phylloscopus collybita</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Phylloscopus_collybita_(taxobox).jpg/200px-Phylloscopus_collybita_(taxobox).jpg"/>
+    <link>http://de.wikipedia.org/wiki/Zilpzalp</link>
+    <mp3 src="mp3/212687" length="Gesang (Length: 0:28"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="15">
+    <name>Graugans</name>
+    <sciname>Anser anser</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Graugans_Anser_Anser.jpg/200px-Graugans_Anser_Anser.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Graugans</link>
+    <mp3 src="mp3/212480" length="0:24"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="16">
+    <name>Eichelhäher</name>
+    <sciname>Garrulus glandarius</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Garrulus_glandarius_1_Luc_Viatour.jpg/200px-Garrulus_glandarius_1_Luc_Viatour.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Eichelhäher</link>
+    <mp3 src="mp3/212630" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="17">
+    <name>Buntspecht</name>
+    <sciname>Dendrocopos major</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buntspecht_Dendrocopos_major-2.jpg/200px-Buntspecht_Dendrocopos_major-2.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Buntspecht</link>
+    <mp3 src="mp3/212896" length="0:28"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="18">
+    <name>Blässhuhn</name>
+    <sciname>Fulica atra</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Eurasian_Coot.jpg/200px-Eurasian_Coot.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Blässhuhn</link>
+    <mp3 src="mp3/212824" length="0:15"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="19">
+    <name>Rotkehlchen</name>
+    <sciname>Erithacus rubecula</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Rouge_gorge_familier_-_crop_(WB_correction).jpg/200px-Rouge_gorge_familier_-_crop_(WB_correction).jpg"/>
+    <link>http://de.wikipedia.org/wiki/Rotkehlchen</link>
+    <mp3 src="mp3/212801" length="0:25"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="20">
+    <name>Graureiher</name>
+    <sciname>Ardea cinerea</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ardea_cinerea_-_Pak_Thale.jpg/200px-Ardea_cinerea_-_Pak_Thale.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Graureiher</link>
+    <mp3 src="mp3/212772" length="0:21"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="21">
+    <name>Mäusebussard</name>
+    <sciname>Buteo buteo</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buteo_buteo_-Netherlands-8.jpg/200px-Buteo_buteo_-Netherlands-8.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Mäusebussard</link>
+    <mp3 src="mp3/212716" length="0:21"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="22">
+    <name>Rabenkrähe</name>
+    <sciname>Corvus corone</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Corvus_corone_Rabenkrähe_1.jpg/200px-Corvus_corone_Rabenkrähe_1.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Aaskrähe</link>
+    <mp3 src="mp3/212992" length="Flugrufe (Length: 0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="23">
+    <name>Ringeltaube</name>
+    <sciname>Columba palumbus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Columba_palumbus_-garden_post-8.jpg/200px-Columba_palumbus_-garden_post-8.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Ringeltaube</link>
+    <mp3 src="mp3/212558" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="24">
+    <name>Mehlschwalbe</name>
+    <sciname>Delichon urbicum</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Delichon_urbicum_-Iceland_-flying-8.jpg/200px-Delichon_urbicum_-Iceland_-flying-8.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Mehlschwalbe</link>
+    <mp3 src="mp3/212689" length="0:24"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="25">
+    <name>Buchfink</name>
+    <sciname>Fringilla coelebs</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chaffinch_(Fringilla_coelebs).jpg/200px-Chaffinch_(Fringilla_coelebs).jpg"/>
+    <link>http://de.wikipedia.org/wiki/Buchfink</link>
+    <mp3 src="mp3/212449" length="Gesang (Length: 0:24"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="26">
+    <name>Kranich</name>
+    <sciname>Grus grus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Grus_grus_1_(Marek_Szczepanek).jpg/200px-Grus_grus_1_(Marek_Szczepanek).jpg"/>
+    <link>http://de.wikipedia.org/wiki/Kranich</link>
+    <mp3 src="mp3/212836" length="0:27"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="27">
+    <name>Kohlmeise</name>
+    <sciname>Parus major</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parus_major_2_Luc_Viatour.jpg/200px-Parus_major_2_Luc_Viatour.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Kohlmeise</link>
+    <mp3 src="mp3/212564" length="0:22"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="28">
+    <name>Kormoran</name>
+    <sciname>Phalacrocorax carbo</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Phalacrocorax_carbo_ja01.jpg/200px-Phalacrocorax_carbo_ja01.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Kormoran_(Art)</link>
+    <mp3 src="mp3/212710" length="0:21"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="29">
+    <name>Elster</name>
+    <sciname>Pica pica</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pica_pica_-Helsinki,_Finland-8a.jpg/200px-Pica_pica_-Helsinki,_Finland-8a.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Elster</link>
+    <mp3 src="mp3/212846" length="0:23"/>
+  </bird>
+</birds>
+<birds>
+  <bird id="30">
+    <name>Turmfalke</name>
+    <sciname>Falco tinnunculus</sciname>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Common_kestrel_falco_tinnunculus.jpg/200px-Common_kestrel_falco_tinnunculus.jpg"/>
+    <link>http://de.wikipedia.org/wiki/Turmfalke</link>
+    <mp3 src="mp3/212659" length="0:26"/>
+  </bird>
+</birds>
+```
+
 
 ## Create an XML File for Our Application
 
@@ -265,7 +561,7 @@ and our final xml data should look like this:
     <bird id="1">
         <name>Amsel</name>
         <sciname>...</sciname>
-        <img src="url"></img>
+        <img src="url"/>
         <link>http://de.wikipedia.org/...</link>
         <mp3 src="path" length=""></mp3>
         <abs>short abstract ...</abs>
@@ -273,7 +569,7 @@ and our final xml data should look like this:
 </birds>
 ```
 
-The respective XSL file ("birddata.xsl") would be the following:
+The respective XSL file ("birdschema.xsl") would be the following:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">	
@@ -350,7 +646,7 @@ with an external filter data ("birdlist.xml"):
 
 Finally, we need to add the following XSL link to xml files, that we want to merge together.
 ```xml
-<?xml-stylesheet type="text/xsl" href="birddata.xsl"?>
+<?xml-stylesheet type="text/xsl" href="birdschema.xsl"?>
 ```
 
 ### Validate using XML Scheme
