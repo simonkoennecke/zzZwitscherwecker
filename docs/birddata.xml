@@ -5,7 +5,7 @@
     <sciname>Bubo bubo</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Uhu-muc.jpg/200px-Uhu-muc.jpg"/>
     <link>http://de.wikipedia.org/wiki/Uhu</link>
-    <mp3 src="mp3/212696" length="0:27"/>
+    <mp3 src="http://species-id.net/o/media/6/61/Bubo_bubo_TSA-medium.mp3" length="0:27"/>
   </bird>
 </birds>
 <birds>
@@ -14,7 +14,7 @@
     <sciname>Luscinia svecica</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Luscinia_svecica_volgae.jpg/200px-Luscinia_svecica_volgae.jpg"/>
     <link>http://de.wikipedia.org/wiki/Blaukehlchen</link>
-    <mp3 src="mp3/212893" length="Gesang, teilweise im Flug vorgetragen (HG: Teichralle, Rothalstaucher, Blessralle, Rohrschwirl, Rohrdommel, Erdkröte, Wasserralle"/>
+    <mp3 src="http://species-id.net/o/media/1/14/Luscinia_svecica_TSA-medium.mp3" length="Gesang, teilweise im Flug vorgetragen (HG: Teichralle, Rothalstaucher, Blessralle, Rohrschwirl, Rohrdommel, Erdkröte, Wasserralle"/>
   </bird>
 </birds>
 <birds>
@@ -23,7 +23,7 @@
     <sciname>Lullula arborea</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lullula_arborea_Rodrigo)de_Almeida.jpg/200px-Lullula_arborea_Rodrigo)de_Almeida.jpg"/>
     <link>http://de.wikipedia.org/wiki/Heidelerche</link>
-    <mp3 src="mp3/212933" length="0:22"/>
+    <mp3 src="http://species-id.net/o/media/3/3b/Lullula_arborea_TSA-medium.mp3" length="0:22"/>
   </bird>
 </birds>
 <birds>
@@ -32,7 +32,7 @@
     <sciname>Athene noctua</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mochuelo_Común_(_Athene_noctua_)(1).jpg/200px-Mochuelo_Común_(_Athene_noctua_)(1).jpg"/>
     <link>http://de.wikipedia.org/wiki/Steinkauz</link>
-    <mp3 src="mp3/212812" length="0:22"/>
+    <mp3 src="http://species-id.net/o/media/3/36/Athene_noctua_TSA-medium.mp3" length="0:22"/>
   </bird>
 </birds>
 <birds>
@@ -41,7 +41,7 @@
     <sciname>Oriolus oriolus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oriole_2.jpg/200px-Oriole_2.jpg"/>
     <link>http://de.wikipedia.org/wiki/Pirol_(Art)</link>
-    <mp3 src="mp3/212513" length="0:22"/>
+    <mp3 src="http://species-id.net/o/media/c/c0/Oriolus_oriolus_TSA-medium.mp3" length="0:22"/>
   </bird>
 </birds>
 <birds>
@@ -50,7 +50,7 @@
     <sciname>Cygnus cygnus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Singschwan.jpg/200px-Singschwan.jpg"/>
     <link>http://de.wikipedia.org/wiki/Singschwan</link>
-    <mp3 src="mp3/212989" length="Rufe (Length: 0:24"/>
+    <mp3 src="http://species-id.net/o/media/9/97/Cygnus_cygnus_TSA-medium.mp3" length="Rufe (Length: 0:24"/>
   </bird>
 </birds>
 <birds>
@@ -59,7 +59,7 @@
     <sciname>Phoenicurus phoenicurus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gekraagde_Roodstaart_20040627.JPG/200px-Gekraagde_Roodstaart_20040627.JPG"/>
     <link>http://de.wikipedia.org/wiki/Gartenrotschwanz</link>
-    <mp3 src="mp3/212494" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/9/91/Phoenicurus_phoenicurus_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -68,7 +68,7 @@
     <sciname>Luscinia megarhynchos</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nachtigall_(Luscinia_megarhynchos)-2.jpg/200px-Nachtigall_(Luscinia_megarhynchos)-2.jpg"/>
     <link>http://de.wikipedia.org/wiki/Nachtigall</link>
-    <mp3 src="mp3/212709" length="0:32"/>
+    <mp3 src="http://species-id.net/o/media/f/fa/Luscinia_megarhynchos_TSA-medium.mp3" length="0:32"/>
   </bird>
 </birds>
 <birds>
@@ -77,7 +77,7 @@
     <sciname>Larus argentatus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Larus_argentatus01.jpg/200px-Larus_argentatus01.jpg"/>
     <link>http://de.wikipedia.org/wiki/Silbermöwe</link>
-    <mp3 src="mp3/212901" length="0:19"/>
+    <mp3 src="http://species-id.net/o/media/e/ec/Larus_argentatus_TSA-medium.mp3" length="0:19"/>
   </bird>
 </birds>
 <birds>
@@ -86,7 +86,7 @@
     <sciname>Phylloscopus trochilus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Willow_Warbler_Phylloscopus_trochilus.jpg/200px-Willow_Warbler_Phylloscopus_trochilus.jpg"/>
     <link>http://de.wikipedia.org/wiki/Fitis</link>
-    <mp3 src="mp3/212590" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/8/86/Phylloscopus_trochilus_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -95,7 +95,7 @@
     <sciname>Carduelis carduelis</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Carcar.jpg/200px-Carcar.jpg"/>
     <link>http://de.wikipedia.org/wiki/Stieglitz</link>
-    <mp3 src="mp3/212982" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/8/86/Carduelis_carduelis_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -104,7 +104,7 @@
     <sciname>Passer montanus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tree_Sparrow_Japan_Flip.jpg/200px-Tree_Sparrow_Japan_Flip.jpg"/>
     <link>http://de.wikipedia.org/wiki/Feldsperling</link>
-    <mp3 src="mp3/212589" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/6/60/Passer_montanus_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -113,7 +113,7 @@
     <sciname>Emberiza citrinella</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg/200px-Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg"/>
     <link>http://de.wikipedia.org/wiki/Goldammer</link>
-    <mp3 src="mp3/212878" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/f/fc/Emberiza_citrinella_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -122,7 +122,7 @@
     <sciname>Phylloscopus collybita</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Phylloscopus_collybita_(taxobox).jpg/200px-Phylloscopus_collybita_(taxobox).jpg"/>
     <link>http://de.wikipedia.org/wiki/Zilpzalp</link>
-    <mp3 src="mp3/212687" length="Gesang (Length: 0:28"/>
+    <mp3 src="http://species-id.net/o/media/e/ef/Phylloscopus_collybita_TSA-medium.mp3" length="Gesang (Length: 0:28"/>
   </bird>
 </birds>
 <birds>
@@ -131,7 +131,7 @@
     <sciname>Anser anser</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Graugans_Anser_Anser.jpg/200px-Graugans_Anser_Anser.jpg"/>
     <link>http://de.wikipedia.org/wiki/Graugans</link>
-    <mp3 src="mp3/212480" length="0:24"/>
+    <mp3 src="http://species-id.net/o/media/9/95/Anser_anser_TSA-medium.mp3" length="0:24"/>
   </bird>
 </birds>
 <birds>
@@ -140,7 +140,7 @@
     <sciname>Garrulus glandarius</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Garrulus_glandarius_1_Luc_Viatour.jpg/200px-Garrulus_glandarius_1_Luc_Viatour.jpg"/>
     <link>http://de.wikipedia.org/wiki/Eichelhäher</link>
-    <mp3 src="mp3/212630" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/e/e2/Garrulus_glandarius_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -149,7 +149,7 @@
     <sciname>Dendrocopos major</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buntspecht_Dendrocopos_major-2.jpg/200px-Buntspecht_Dendrocopos_major-2.jpg"/>
     <link>http://de.wikipedia.org/wiki/Buntspecht</link>
-    <mp3 src="mp3/212896" length="0:28"/>
+    <mp3 src="http://species-id.net/o/media/0/03/Dendrocopos_major_TSA-medium.mp3" length="0:28"/>
   </bird>
 </birds>
 <birds>
@@ -158,7 +158,7 @@
     <sciname>Fulica atra</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Eurasian_Coot.jpg/200px-Eurasian_Coot.jpg"/>
     <link>http://de.wikipedia.org/wiki/Blässhuhn</link>
-    <mp3 src="mp3/212824" length="0:15"/>
+    <mp3 src="http://species-id.net/o/media/9/9b/Fulica_atra_TSA-medium.mp3" length="0:15"/>
   </bird>
 </birds>
 <birds>
@@ -167,7 +167,7 @@
     <sciname>Erithacus rubecula</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Rouge_gorge_familier_-_crop_(WB_correction).jpg/200px-Rouge_gorge_familier_-_crop_(WB_correction).jpg"/>
     <link>http://de.wikipedia.org/wiki/Rotkehlchen</link>
-    <mp3 src="mp3/212801" length="0:25"/>
+    <mp3 src="http://species-id.net/o/media/f/f8/Erithacus_rubecula_TSA-medium.mp3" length="0:25"/>
   </bird>
 </birds>
 <birds>
@@ -176,7 +176,7 @@
     <sciname>Ardea cinerea</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ardea_cinerea_-_Pak_Thale.jpg/200px-Ardea_cinerea_-_Pak_Thale.jpg"/>
     <link>http://de.wikipedia.org/wiki/Graureiher</link>
-    <mp3 src="mp3/212772" length="0:21"/>
+    <mp3 src="http://species-id.net/o/media/e/ee/Ardea_cinerea_TSA-medium.mp3" length="0:21"/>
   </bird>
 </birds>
 <birds>
@@ -185,7 +185,7 @@
     <sciname>Buteo buteo</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buteo_buteo_-Netherlands-8.jpg/200px-Buteo_buteo_-Netherlands-8.jpg"/>
     <link>http://de.wikipedia.org/wiki/Mäusebussard</link>
-    <mp3 src="mp3/212716" length="0:21"/>
+    <mp3 src="http://species-id.net/o/media/d/d1/Buteo_buteo_TSA-medium.mp3" length="0:21"/>
   </bird>
 </birds>
 <birds>
@@ -194,7 +194,7 @@
     <sciname>Corvus corone</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Corvus_corone_Rabenkrähe_1.jpg/200px-Corvus_corone_Rabenkrähe_1.jpg"/>
     <link>http://de.wikipedia.org/wiki/Aaskrähe</link>
-    <mp3 src="mp3/212992" length="Flugrufe (Length: 0:23"/>
+    <mp3 src="http://species-id.net/o/media/2/2f/Corvus_corone_TSA-medium.mp3" length="Flugrufe (Length: 0:23"/>
   </bird>
 </birds>
 <birds>
@@ -203,7 +203,7 @@
     <sciname>Columba palumbus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Columba_palumbus_-garden_post-8.jpg/200px-Columba_palumbus_-garden_post-8.jpg"/>
     <link>http://de.wikipedia.org/wiki/Ringeltaube</link>
-    <mp3 src="mp3/212558" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/4/46/Columba_palumbus_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -212,7 +212,7 @@
     <sciname>Delichon urbicum</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Delichon_urbicum_-Iceland_-flying-8.jpg/200px-Delichon_urbicum_-Iceland_-flying-8.jpg"/>
     <link>http://de.wikipedia.org/wiki/Mehlschwalbe</link>
-    <mp3 src="mp3/212689" length="0:24"/>
+    <mp3 src="http://species-id.net/o/media/f/f1/Delichon_urbicum_TSA-medium.mp3" length="0:24"/>
   </bird>
 </birds>
 <birds>
@@ -221,7 +221,7 @@
     <sciname>Fringilla coelebs</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chaffinch_(Fringilla_coelebs).jpg/200px-Chaffinch_(Fringilla_coelebs).jpg"/>
     <link>http://de.wikipedia.org/wiki/Buchfink</link>
-    <mp3 src="mp3/212449" length="Gesang (Length: 0:24"/>
+    <mp3 src="http://species-id.net/o/media/d/d4/Fringilla_coelebs_TSA-medium.mp3" length="Gesang (Length: 0:24"/>
   </bird>
 </birds>
 <birds>
@@ -230,7 +230,7 @@
     <sciname>Grus grus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Grus_grus_1_(Marek_Szczepanek).jpg/200px-Grus_grus_1_(Marek_Szczepanek).jpg"/>
     <link>http://de.wikipedia.org/wiki/Kranich</link>
-    <mp3 src="mp3/212836" length="0:27"/>
+    <mp3 src="http://species-id.net/o/media/5/5f/Grus_grus_TSA-medium.mp3" length="0:27"/>
   </bird>
 </birds>
 <birds>
@@ -239,7 +239,7 @@
     <sciname>Parus major</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parus_major_2_Luc_Viatour.jpg/200px-Parus_major_2_Luc_Viatour.jpg"/>
     <link>http://de.wikipedia.org/wiki/Kohlmeise</link>
-    <mp3 src="mp3/212564" length="0:22"/>
+    <mp3 src="http://species-id.net/o/media/b/b0/Parus_major_TSA-medium.mp3" length="0:22"/>
   </bird>
 </birds>
 <birds>
@@ -248,7 +248,7 @@
     <sciname>Phalacrocorax carbo</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Phalacrocorax_carbo_ja01.jpg/200px-Phalacrocorax_carbo_ja01.jpg"/>
     <link>http://de.wikipedia.org/wiki/Kormoran_(Art)</link>
-    <mp3 src="mp3/212710" length="0:21"/>
+    <mp3 src="http://species-id.net/o/media/4/48/Phalacrocorax_carbo_TSA-medium.mp3" length="0:21"/>
   </bird>
 </birds>
 <birds>
@@ -257,7 +257,7 @@
     <sciname>Pica pica</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pica_pica_-Helsinki,_Finland-8a.jpg/200px-Pica_pica_-Helsinki,_Finland-8a.jpg"/>
     <link>http://de.wikipedia.org/wiki/Elster</link>
-    <mp3 src="mp3/212846" length="0:23"/>
+    <mp3 src="http://species-id.net/o/media/2/25/Pica_pica_TSA-medium.mp3" length="0:23"/>
   </bird>
 </birds>
 <birds>
@@ -266,6 +266,6 @@
     <sciname>Falco tinnunculus</sciname>
     <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Common_kestrel_falco_tinnunculus.jpg/200px-Common_kestrel_falco_tinnunculus.jpg"/>
     <link>http://de.wikipedia.org/wiki/Turmfalke</link>
-    <mp3 src="mp3/212659" length="0:26"/>
+    <mp3 src="http://species-id.net/o/media/6/6a/Falco_tinnunculus_TSA-medium.mp3" length="0:26"/>
   </bird>
 </birds>

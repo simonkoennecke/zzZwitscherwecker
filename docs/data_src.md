@@ -167,7 +167,7 @@ return (<birds><bird id="{$i}">
 <sciname>{data($x/ScientificNames)}</sciname>
 <img src="{data($z/binding[@name='thumbnail']/uri)}" />
 <link>{replace(data($z/binding[@name='links']/uri), 'dbpedia.org/resource', 'wikipedia.org/wiki')}</link>
-<mp3 src="mp3/{data($x/PageId)}" length="{substring-before(substring-after(data($x/Description), ': '), ')')}"></mp3></bird></birds>)
+<mp3 src="{data($x/DownloadLink)}" length="{substring-before(substring-after(data($x/Description), ': '), ')')}"></mp3></bird></birds>)
 ```
 Then, we get the following data:
 ```xml
