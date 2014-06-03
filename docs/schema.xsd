@@ -7,7 +7,7 @@
 		<xs:complexType>
 			<xs:simpleContent>
 				<xs:extension base="xs:string">
-					<xs:attribute name="src" type="xs:anyURL" use="required"/>
+					<xs:attribute name="src" type="xs:anyURI" use="required"/>
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -18,7 +18,7 @@
 			<xs:simpleContent>
 				<xs:extension base="xs:string">
 					<xs:attribute name="src" type="xs:anyURI" use="required"/>
-					<xs:attribute name="length" type="xs:duration" use="required"/>
+					<xs:attribute name="length" type="xs:string" use="required"/>
 				</xs:extension>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -33,9 +33,8 @@
 	<xs:element name="birds">
 		<xs:complexType>
 	    	<xs:sequence>
-				<xs:element ref="bird" />
+				<xs:element ref="bird" maxOccurs="unbounded"/>
 			</xs:sequence>
-			<xs:attribute ref="id" use="required" />
 		</xs:complexType>
 	</xs:element>
 	
@@ -44,11 +43,12 @@
 			<xs:sequence>
 				<xs:element ref="name" minOccurs="1"/>
 				<xs:element ref="sciname" minOccurs="1"/>
+				<xs:element ref="mp3" minOccurs="1"/>
 				<xs:element ref="img" minOccurs="1"/>
 				<xs:element ref="link" minOccurs="1"/>
-				<xs:element ref="mp3" minOccurs="1"/>
 				<xs:element ref="abs" minOccurs="1"/>
 			</xs:sequence>
+			<xs:attribute ref="id" use="required" />
 	    </xs:complexType>
 	</xs:element>
 </xs:schema>

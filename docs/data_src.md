@@ -123,11 +123,10 @@ WHERE {
    owl:sameAs ?links;
    d:wikiPageInLinkCount ?count;
    dbpprop:binomial ?binomial.
-     FILTER(?count > 100).
      FILTER(regex(?links, "^http://de", "i")).
      FILTER(langMatches(lang(?abstract), "DE"))
 } 
-LIMIT 1000
+LIMIT 3000
 ```
 
 
@@ -411,16 +410,28 @@ To validate it, we write an XML schema ("schema.xsd"):
 <?xml version='1.0' encoding='utf-8' ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<!-- STEP 1: define the simple-type elements -->
-	<xs:element name="name" type="xs:string"/>
+	<xs:element name="name" type="xs:string" />
 	<xs:element name="sciname" type="xs:string"/>
-	<xs:element name="img" type="xs:string">
-		<xs:attribute name="src" type="xs:anyURL"/>
+	<xs:element name="img">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:anyURI" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
 	</xs:element>
 	<xs:element name="link" type="xs:string"/>
-	<xs:element name="mp3" type="xs:string">
-		<xs:attribute name="src" type="xs:anyURI"/>
-		<xs:attribute name="length" type="xs:duration"/>
-	<xs:element>
+	<xs:element name="mp3">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="src" type="xs:anyURI" use="required"/>
+					<xs:attribute name="length" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="abs" type="xs:string"/>
     <!-- STEP 2: define the attributes -->
     <xs:attribute name="id" type="xs:decimal"/>
@@ -430,22 +441,23 @@ To validate it, we write an XML schema ("schema.xsd"):
     -->
 	<xs:element name="birds">
 		<xs:complexType>
-			<xs:attribute ref="id" />
 	    	<xs:sequence>
-				<xs:element ref="bird" />
+				<xs:element ref="bird" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="bird">
+	
+	<xs:element name="bird" >
 	  	<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="name" />
-				<xs:element ref="sciname" />
-				<xs:element ref="img" />
-				<xs:element ref="link" />
-				<xs:element ref="mp3" />
-				<xs:element ref="abs" />
+				<xs:element ref="name" minOccurs="1"/>
+				<xs:element ref="sciname" minOccurs="1"/>
+				<xs:element ref="mp3" minOccurs="1"/>
+				<xs:element ref="img" minOccurs="1"/>
+				<xs:element ref="link" minOccurs="1"/>
+				<xs:element ref="abs" minOccurs="1"/>
 			</xs:sequence>
+			<xs:attribute ref="id" use="required" />
 	    </xs:complexType>
 	</xs:element>
 </xs:schema>
@@ -460,7 +472,6 @@ The XML file can be validated against the above schema with the following comman
 ```
 xmllint --noout --schema schema.xsd birddata.xml
 ```
-
 
 ### Create an XML Database 
 
