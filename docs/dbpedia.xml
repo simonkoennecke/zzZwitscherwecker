@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href=“transform.xsl"?>
-<!--sparql xmlns="http://www.w3.org/2005/sparql-results#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd”-->
- <!--head>
-  <variable name="p"/>
-  <variable name="thumbnail"/>
-  <variable name="binomial"/>
-  <variable name="abstract"/>
-  <variable name="links"/>
- </head-->
- <results distinct="false" ordered="true">
+<results distinct="false" ordered="true">
   <result>
    <binding name="p"><uri>http://dbpedia.org/resource/Abbott&#39;s_Booby</uri></binding>
    <binding name="thumbnail"><uri>http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Abbotts_Booby_(Papasula_abbotti).jpg/200px-Abbotts_Booby_(Papasula_abbotti).jpg</uri></binding>
@@ -19939,4 +19931,3 @@
    <binding name="links"><uri>http://de.dbpedia.org/resource/Seychellen-Dotterbrust-Brillenvogel</uri></binding>
   </result>
  </results>
-</sparql>

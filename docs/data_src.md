@@ -292,7 +292,7 @@ The corresponding XSL file ("transform.xsl") would be the following:
         	<xsl:if test="ScientificNames = $skipname">
 				<name><xsl:value-of select="CommonNames"/></name>
 				<sciname><xsl:value-of select="ScientificNames"/></sciname>
-				<mp3 src="{DownloadLink}" length="{substring-before(substring-after(Description, ': '), ')')}"/>
+				<mp3 src="{DownloadLink}" length="{substring-before(substring-after(Description, 'Length: '), ')')}"/>
 			</xsl:if>
 		</xsl:for-each>
 	</xsl:template>
@@ -479,22 +479,19 @@ For this project, we used an application called ‘BaseX’.
 
 #### Query Data
 
-30 birds with medium-length mp3s from "output.xml":
+Example 1) 
+* List all the names of birds that are longer than 20 letters.
+
 ```XQuery
-for $y in doc('/Users/yena/git/zzZwitscherwecker/docs/birdlist.xml')/skip/abbr
-for $x in doc('/Users/yena/git/zzZwitscherwecker/docs/output.xml')/files/file
-where $x/ScientificNames=$y and substring-after(data($x/Filename), '-')='medium.mp3'
-return (<birds><bird id="{data($x/PageId)}">
-<name>{data($x/CommonNames)}</name>
-<sciname>{data($x/ScientificNames)}</sciname>
-<mp3 src="mp3/{data($x/PageId)}" length="{substring-before(substring-after(data($x/Description), ': '), ')')}"></mp3></bird></birds>)
+for $file in db:open('output')/files/file
+count $c
+where string-length($file/ScientificNames)>20 and $c[.mod 2=0]
+return data($file/ScientificNames)
 ```
 
-30 birds from "dbpedia.xml":
-```XQuery
-for $y in doc('/Users/yena/git/zzZwitscherwecker/docs/birdlist.xml')/skip/abbr
-for $z in doc('/Users/yena/git/zzZwitscherwecker/docs/dbpedia.xml')/results/result
-where data($z/binding[@name='binomial'])=$y
-return (<birds><img src="{data($z/binding[@name='thumbnail']/uri)}" />
-<link>{replace(data($z/binding[@name='links']/uri), 'dbpedia.org/resource', 'wikipedia.org/wiki')}</link><abs>{data($z/binding[@name='abstract'])}</abs></birds>)
-```
+This query returns the following:
+Acrocephalus arundinaceus Acrocephalus dumetorum Acrocephalus paludicola Acrocephalus palustris Acrocephalus schoenobaenus Acrocephalus scirpaceus Calandrella brachydactyla Caprimulgus europaeus Carduelis flammea cabaret Carduelis flavirostris Carpodacus erythrinus Certhia brachydactyla Charadrius morinellus Chlidonias leucopterus Chroicocephalus ridibundus Coccothraustes coccothraustes Emberiza spodocephala Fringilla montifringilla Glaucidium passerinum Haematopus ostralegus Himantopus himantopus Locustella fluviatilis Locustella luscinioides Lophophanes cristatus Luscinia megarhynchos Montifringilla nivalis Nucifraga caryocatactes Nycticorax nycticorax Pelecanus onocrotalus Pelophylax lessonae Pelophylax ridibundus Phalaropus fulicarius Phoenicurus phoenicurus Phylloscopus collybita Phylloscopus sibilatrix Phylloscopus trochilus Plectrophenax nivalis Pyrrhocorax pyrrhocorax Recurvirostra avosetta
+
+
+
+

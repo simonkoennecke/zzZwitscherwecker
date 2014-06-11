@@ -32,7 +32,7 @@
 				<xsl:if test="substring-after(Filename, '-')='medium.mp3'">
 					<name><xsl:value-of select="CommonNames"/></name>
 					<sciname><xsl:value-of select="ScientificNames"/></sciname>
-					<mp3 src="{DownloadLink}" length="{substring-before(substring-after(Description, ': '), ')')}"/>
+					<mp3 src="{DownloadLink}" length="{substring-before(substring-after(Description, 'Length: '), ')')}"/>
 				</xsl:if>
 			</xsl:if>
 		</xsl:for-each>
