@@ -475,7 +475,7 @@ xmllint --noout --schema schema.xsd birddata.xml
 
 ### Create an XML Database 
 
-For this project, we used an application called ‘BaseX’.
+For this part, we used an application called ‘BaseX’.
 
 #### Query Data
 
@@ -483,15 +483,34 @@ Example 1)
 * List all the names of birds that are longer than 20 letters.
 
 ```XQuery
-for $file in db:open('output')/files/file
-count $c
-where string-length($file/ScientificNames)>20 and $c[.mod 2=0]
-return data($file/ScientificNames)
+for $bird in db:open('birddata')/birds/bird
+where string-length($bird/sciname)>20
+return data($bird/sciname)
 ```
 
 This query returns the following:
-Acrocephalus arundinaceus Acrocephalus dumetorum Acrocephalus paludicola Acrocephalus palustris Acrocephalus schoenobaenus Acrocephalus scirpaceus Calandrella brachydactyla Caprimulgus europaeus Carduelis flammea cabaret Carduelis flavirostris Carpodacus erythrinus Certhia brachydactyla Charadrius morinellus Chlidonias leucopterus Chroicocephalus ridibundus Coccothraustes coccothraustes Emberiza spodocephala Fringilla montifringilla Glaucidium passerinum Haematopus ostralegus Himantopus himantopus Locustella fluviatilis Locustella luscinioides Lophophanes cristatus Luscinia megarhynchos Montifringilla nivalis Nucifraga caryocatactes Nycticorax nycticorax Pelecanus onocrotalus Pelophylax lessonae Pelophylax ridibundus Phalaropus fulicarius Phoenicurus phoenicurus Phylloscopus collybita Phylloscopus sibilatrix Phylloscopus trochilus Plectrophenax nivalis Pyrrhocorax pyrrhocorax Recurvirostra avosetta
+Phoenicurus phoenicurus Luscinia megarhynchos Phylloscopus trochilus Phylloscopus collybita
 
 
+Example 2)
+* List first birds of indices 5 to 10.
+```XQuery
+for $bird in db:open('birddata')/birds/bird
+where $bird/@id>=5 and $bird/@id<=10
+return data($bird/sciname)
+```
+
+This query returns the following:
+Oriolus oriolus Cygnus cygnus Phoenicurus phoenicurus Luscinia megarhynchos Larus argentatus Phylloscopus trochilus
 
 
+Example 3)
+* Find the common name of the bird with the longest abstract in DBpedia.
+```XQuery
+let $maxlen:=max(for $bird in db:open('birddata')/birds/bird
+return string-length($bird/abs))
+
+for $bird in db:open('birddata')/birds/bird
+where string-length($bird/abs)>=$maxlen
+return data($bird/sciname)
+```
