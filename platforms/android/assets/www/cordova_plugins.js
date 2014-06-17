@@ -186,6 +186,74 @@ module.exports = [
         "clobbers": [
             "plugin.notification.local"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.media/www/MediaError.js",
+        "id": "org.apache.cordova.media.MediaError",
+        "clobbers": [
+            "window.MediaError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.media/www/Media.js",
+        "id": "org.apache.cordova.media.Media",
+        "clobbers": [
+            "window.Media"
+        ]
+    },
+    {
+        "file": "plugins/org.chromium.alarms/alarms.js",
+        "id": "org.chromium.alarms.Alarms",
+        "clobbers": [
+            "chrome.alarms"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
+        "id": "org.apache.cordova.device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
+        "id": "org.apache.cordova.device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js",
+        "id": "org.apache.cordova.inappbrowser.inappbrowser",
+        "clobbers": [
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/org.chromium.common/events.js",
+        "id": "org.chromium.common.events",
+        "clobbers": [
+            "chrome.Event"
+        ]
+    },
+    {
+        "file": "plugins/org.chromium.common/errors.js",
+        "id": "org.chromium.common.errors"
+    },
+    {
+        "file": "plugins/org.chromium.common/stubs.js",
+        "id": "org.chromium.common.stubs"
+    },
+    {
+        "file": "plugins/org.chromium.common/helpers.js",
+        "id": "org.chromium.common.helpers"
+    },
+    {
+        "file": "plugins/org.chromium.storage/storage.js",
+        "id": "org.chromium.storage.Storage",
+        "clobbers": [
+            "chrome.storage"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -196,7 +264,13 @@ module.exports.metadata =
     "org.apache.cordova.file-transfer": "0.4.4-dev",
     "org.apache.cordova.dialogs": "0.2.8-dev",
     "org.apache.cordova.vibration": "0.3.9-dev",
-    "de.appplant.cordova.plugin.local-notification": "0.7.4"
+    "de.appplant.cordova.plugin.local-notification": "0.7.4",
+    "org.apache.cordova.media": "0.2.11-dev",
+    "org.chromium.alarms": "1.0.1",
+    "org.apache.cordova.device-motion": "0.2.7",
+    "org.apache.cordova.inappbrowser": "0.5.0",
+    "org.chromium.common": "1.0.1",
+    "org.chromium.storage": "1.0.1"
 }
 // BOTTOM OF METADATA
 });

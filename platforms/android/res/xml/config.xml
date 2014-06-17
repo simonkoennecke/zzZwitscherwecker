@@ -23,14 +23,30 @@
     <feature name="LocalNotification">
         <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
     </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="ChromeStorage">
+        <param name="android-package" value="org.chromium.ChromeStorage" />
+    </feature>
+    <feature name="ChromeAlarms">
+        <param name="android-package" value="org.chromium.ChromeAlarms" />
+        <param name="onload" value="true" />
+    </feature>
     <name>zzZwitscherwecker</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <author email="luat@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
+    <author email="laut@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
         Simon Koennecke		
     </author>
     <content src="index.html" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.2" />
     <access origin="*" />
+    <preference name="AndroidLaunchMode" value="singleTop" />
 </widget>

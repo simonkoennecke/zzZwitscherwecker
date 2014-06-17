@@ -1,0 +1,264 @@
+ /* Button */
+#settings .ui-checkbox label:after, .ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited,
+.ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover{
+	background-color: rgba(20,20,20, .4);
+}
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-aar-a .ui-atn:visited, html .ui-aody-a .ui-atn:visited, html body .ui-group-theme-a .ui-atn:visited, html head+body .ui-atn.ui-atn-a:visited,
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head+body .ui-btn.ui-btn-a:hover,
+div.ui-flipswitch-active a.ui-flipswitch-on.ui-btn.ui-shadow.ui-btn-inherit{
+	background-color: rgba(0,220,0, .4);
+}
+.ui-page-theme-a .ui-btn:focus,html .ui-bar-a .ui-btn:focus,html .ui-body-a .ui-btn:focus,html body .ui-group-theme-a .ui-btn:focus,html head+body .ui-btn.ui-btn-a:focus,.ui-page-theme-a .ui-focus,html .ui-bar-a .ui-focus,html .ui-body-a .ui-focus,html body .ui-group-theme-a .ui-focus,html head+body .ui-btn-a.ui-focus,html head+body .ui-body-a.ui-focus,
+.ui-page-theme-b .ui-btn:focus,html .ui-bar-b .ui-btn:focus,html .ui-body-b .ui-btn:focus,html body .ui-group-theme-b .ui-btn:focus,html head+body .ui-btn.ui-btn-b:focus,.ui-page-theme-b .ui-focus,html .ui-bar-b .ui-focus,html .ui-body-b .ui-focus,html body .ui-group-theme-b .ui-focus,html head+body .ui-btn-b.ui-focus,html head+body .ui-body-b.ui-focus,
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-aar-a .ui-atn:visited, html .ui-aody-a .ui-atn:visited, html body .ui-group-theme-a .ui-atn:visited, html head+body .ui-atn.ui-atn-a:visited,
+.ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head+body .ui-btn.ui-btn-a:hover,
+.ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited,
+.ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover{
+	border:0;
+	-webkit-box-shadow:0 0 0 #2ad;
+	-moz-box-shadow:0 0 0 #2ad;
+	box-shadow:0 0 0 #2ad;
+	color: #fff;
+	text-shadow: 0 1px 0 #111;
+}
+
+/* Slider */
+.ui-bar-b, .ui-page-theme-b .ui-bar-inherit, html .ui-bar-b .ui-bar-inherit, html .ui-body-b .ui-bar-inherit, html body .ui-group-theme-b .ui-bar-inherit,
+.ui-page-theme-b .ui-btn.ui-btn-active, html .ui-bar-b .ui-btn.ui-btn-active, html .ui-body-b .ui-btn.ui-btn-active, html body .ui-group-theme-b .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-b.ui-btn-active, .ui-page-theme-b .ui-checkbox-on:after, html .ui-bar-b .ui-checkbox-on:after, html .ui-body-b .ui-checkbox-on:after, html body .ui-group-theme-b .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-b:after, .ui-page-theme-b .ui-flipswitch-active, html .ui-bar-b .ui-flipswitch-active, html .ui-body-b .ui-flipswitch-active, html body .ui-group-theme-b .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-b.ui-flipswitch-active, .ui-page-theme-b .ui-slider-track .ui-btn-active, html .ui-bar-b .ui-slider-track .ui-btn-active, html .ui-body-b .ui-slider-track .ui-btn-active, html body .ui-group-theme-b .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-b .ui-btn-active{
+	background-color: rgba(20,20,20, .4);
+	border: 0px;
+	-webkit-box-shadow: 0 0 0 #000;
+	-moz-box-shadow: 0 0 0 #000;
+	box-shadow: 0 0 0 #000;
+	color: #fff;
+	text-shadow: 0 0px 0 #111;
+}
+div.ui-flipswitch a.ui-flipswitch-on.ui-btn.ui-shadow.ui-btn-inherit, 
+.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head+body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head+body .ui-btn-a.ui-focus, html head+body .ui-body-a.ui-focus, .ui-page-theme-b .ui-btn:focus, html .ui-bar-b .ui-btn:focus, html .ui-body-b .ui-btn:focus, html body .ui-group-theme-b .ui-btn:focus, html head+body .ui-btn.ui-btn-b:focus, .ui-page-theme-b .ui-focus, html .ui-bar-b .ui-focus, html .ui-body-b .ui-focus, html body .ui-group-theme-b .ui-focus, html head+body .ui-btn-b.ui-focus, html head+body .ui-body-b.ui-focus, .ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-aar-a .ui-atn:visited, html .ui-aody-a .ui-atn:visited, html body .ui-group-theme-a .ui-atn:visited, html head+body .ui-atn.ui-atn-a:visited, .ui-page-theme-a .ui-btn:hover, html .ui-bar-a .ui-btn:hover, html .ui-body-a .ui-btn:hover, html body .ui-group-theme-a .ui-btn:hover, html head+body .ui-btn.ui-btn-a:hover, .ui-page-theme-b .ui-btn, html .ui-bar-b .ui-btn, html .ui-body-b .ui-btn, html body .ui-group-theme-b .ui-btn, html head+body .ui-btn.ui-btn-b, .ui-page-theme-b .ui-btn:visited, html .ui-bar-b .ui-btn:visited, html .ui-body-b .ui-btn:visited, html body .ui-group-theme-b .ui-btn:visited, html head+body .ui-btn.ui-btn-b:visited, .ui-page-theme-b .ui-btn:hover, html .ui-bar-b .ui-btn:hover, html .ui-body-b .ui-btn:hover, html body .ui-group-theme-b .ui-btn:hover, html head+body .ui-btn.ui-btn-b:hover{
+	border: 0px;
+	-webkit-box-shadow: 0 0 0 #000;
+	-moz-box-shadow: 0 0 0 #000;
+	box-shadow: 0 0 0 #000;
+	color: #fff;
+	text-shadow: 0 0px 0 #111;
+}
+#settings .switchonoff{
+	clear:both;
+	margin-right: 5px;
+}
+#settings .switchonoff > fieldset{
+	float:right;
+}
+/* Textbox */
+.colorframe, .ui-body-b, .ui-page-theme-b .ui-body-inherit, html .ui-bar-b .ui-body-inherit, html .ui-body-b .ui-body-inherit, html body .ui-group-theme-b .ui-body-inherit, html .ui-panel-page-container-b{
+	background-color: rgba(22,22,22,0.4);
+	border: 0;
+	color: #fff;
+	text-shadow: 0 1px 0 #111;
+	-webkit-border-radius: .125em;
+	border-radius: .125em;
+	margin-right: 5px;
+}
+
+
+/* Body */
+body, input, select, textarea, button, .ui-btn {
+font-family: droidsans,sans-serif;
+}
+body, .ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper{
+	background-image: url('../img/bg.jpg');	
+	background-size: 1000px 100%;	
+}
+#settings div.ui-controlgroup-controls {
+	margin-top: 10px;
+}
+#settings div.ui-controlgroup .ui-btn{
+	padding: 7px 3px;
+	margin: 4px;
+	min-width: 32px;
+	-webkit-border-radius: .125em;
+	border-radius: .125em;
+	text-transform: uppercase;
+}
+
+#settings .ui-first-child{
+	margin-left: 0px !important;
+}
+#settings div.ui-controlgroup .ui-btn:last-child{
+	margin-right: 0px !important;
+}
+#settings div.ui-controlgroup .ui-btn input {
+	background-color: transparent;
+}
+#lblTime{
+	font-size: 7em;
+	letter-spacing: 10px;
+	min-width: 100%;
+	text-align: center;
+	margin: 15px 0;
+}
+#settings, .frameborder{
+	max-width: 320px;
+	margin: auto auto;
+}
+.frame{
+	margin-top: 0px;
+	padding: 20px;
+}
+
+#settings .hideTimeBox{
+	height: 0px;
+	position: absolute;
+	top: -100px;
+} 
+
+/*
+ Header Menu Button
+ */
+.btnmenu {
+	width: 15px;
+	height: 15px;
+	background-color: rgba(20,20,20, .4);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.btnmenu:after{
+	left:27% !important;
+	background-color: transparent;
+}
+/* Parallax effect */
+.page .content{
+
+}
+
+/* Collaps */
+.ui-collapsible-inset.ui-collapsible-themed-content .ui-collapsible-content{
+	border:0;
+}
+
+
+/* Quiz */
+#quizlabel{
+	font-size: 1.3em;
+	margin:0px;
+}
+#quizlogo {
+	float:left;
+	margin: 21px 0px 0px 14px;
+}
+#quizlogo img{
+	max-width: 65px;
+}
+#quizdetails{
+	float:right;
+	margin-right: 10px;
+}
+#quizdetails .time{
+	font-size:3.5em;
+}
+#quizdetails .date{
+	font-size: 1.15em;
+}
+#quiz h2{
+	font-size: 1.3em;
+	text-align: center;
+}
+.quizanswerwrapper{
+	margin-right: 6px;
+	margin-bottom: 6px;
+	
+	
+	position: relative;
+	float: left;
+	width:48%;
+	max-height: 150px;
+	min-height: 150px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-size: 100% 100%;
+	
+}
+.quizanswer{
+	background-image: -moz-linear-gradient(top, transparent 65%, #000 95%);
+	background-image: -webkit-linear-gradient(top, transparent 65%, #000 95%);
+	background-image: -ms-linear-gradient(top, transparent 65%, #000 95%);
+	background-image: -o-linear-gradient(top, transparent 65%, #000 95%);
+	
+	width:100%;
+	max-height: 150px;
+	min-height: 150px;
+	
+}
+.sciname{
+	display:none;
+}
+.birdname{
+	position: absolute;
+	margin: 0px;
+	bottom: 3px;
+	left: 6px;
+	font-size: 1em;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.abs{
+	display:none;
+}
+div.answer-wrong, div.answer-right{
+	opacity: 0.6;
+}
+div.answer-wrong {
+	background-image: -moz-linear-gradient(top, red 65%, #000 95%);
+	background-image: -webkit-linear-gradient(top, red 65%, #000 95%);
+	background-image: -ms-linear-gradient(top, red 65%, #000 95%);
+	background-image: -o-linear-gradient(top, red 65%, #000 95%);
+	
+}
+div.answer-right {
+	background-image: -moz-linear-gradient(top, green 65%, #000 95%);
+	background-image: -webkit-linear-gradient(top, green 65%, #000 95%);
+	background-image: -ms-linear-gradient(top, green 65%, #000 95%);
+	background-image: -o-linear-gradient(top, green 65%, #000 95%);
+}
+
+/* Result */
+.result h2{
+	margin:0px;
+}
+.result img{
+	margin: 10px auto;
+	display: block;
+	
+}
+.result audio{
+	width: 100%;
+}
+/* checkboxen */
+#settings .ui-checkbox input{
+	display: none;
+	background-color: transparent;
+	border: 1px solid black;
+}
+#settings .ui-checkbox label{
+	background-color: transparent;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding-top: 16px;
+	padding-right: 0px;
+}
+#settings .ui-checkbox label:after{
+	opacity: 1;
+	padding: 3px;
+	margin-left: -9px
+}
+html body .ui-btn.ui-checkbox-on.ui-btn-b:after,
+html body .ui-btn.ui-checkbox-off.ui-btn-b:after{
+	background-color:transparent !important;
+}
+	

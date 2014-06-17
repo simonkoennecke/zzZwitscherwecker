@@ -31,6 +31,28 @@
                         {
                             "xml": "<feature name=\"LocalNotification\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.localnotification.LocalNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Media\"><param name=\"android-package\" value=\"org.apache.cordova.media.AudioHandler\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Accelerometer\"><param name=\"android-package\" value=\"org.apache.cordova.devicemotion.AccelListener\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"ChromeStorage\"><param name=\"android-package\" value=\"org.chromium.ChromeStorage\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"ChromeAlarms\"><param name=\"android-package\" value=\"org.chromium.ChromeAlarms\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -40,7 +62,19 @@
                     "/*": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
                         }
                     ],
                     "/manifest": [
@@ -64,6 +98,10 @@
                         },
                         {
                             "xml": "<activity android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.localnotification.ReceiverActivity\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"org.chromium.AlarmReceiver\" />",
                             "count": 1
                         }
                     ]
@@ -89,7 +127,26 @@
         },
         "de.appplant.cordova.plugin.local-notification": {
             "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        },
+        "org.apache.cordova.media": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        },
+        "org.chromium.alarms": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        },
+        "org.apache.cordova.device-motion": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.chromium.common": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        },
+        "org.chromium.storage": {
+            "PACKAGE_NAME": "de.farbtrommel.zwitscherwecker"
+        }
+    }
 }

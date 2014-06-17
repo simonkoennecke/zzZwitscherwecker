@@ -7,106 +7,134 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
-		
+		<link rel="stylesheet" href="css/zwitscherwecker.css" />
 		
         <title>zzZwitscherwecker</title>
     </head>
-    <body>
+    <body data-theme="b">
 
-<div data-role="page" id="home">
+<div data-role="page" id="panel_settings" data-theme="b">
   <div data-role="header">
     <h1>zzZwitscherwecker</h1>
+	<a href="#information" data-icon="info" class="btnmenu"></a>	
   </div>
-	<div data-role="controlgroup">
-		<a href="#einstellung" data-role="button" data-icon="clock">Einstellung</a>
-		<a href="#quiz" data-role="button" data-icon="forward">Quiz spielen</a>
-		<a href="#information" data-role="button" data-icon="info">Information</a>
-		<a href="#alarm" data-role="button" data-icon="alert">Alarm (only visible in developer mode)</a>
+	
+	<div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+		<div data-role="controlgroup">
+			<a href="#information" data-role="button" data-icon="info">Information</a>
+		</div>
 	</div>
-</div>
- 
-<div data-role="page" id="einstellung">
-  <div data-role="header">
-    <h1>zzZwitscherwecker | Einstellung</h1>
-	<a href="index.html" data-icon="bars">Menu</a>
-  </div>
+  
   <div data-role="content">
     <form id="settings">
-		<input type="checkbox" class="right" data-role="flipswitch" name="status" id="status" checked="" value="on">
-		<input type="text" name="label" id="label" value="" placeholder="Label" data-clear-btn="true">
-		<input type="time" name="time" id="time"/>
-		<div data-role="controlgroup" data-type="horizontal">
-		  <input type="button" class="ui-btn ui-corner-all" value="Mo"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="Di"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="Mi"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="Do"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="Fr"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="Sa"/>
-		  <input type="button" class="ui-btn ui-corner-all" value="So"/>
-		  <input type="hidden" value="" name="day[]"/>
+		<div class="switchonoff">
+			<fieldset>
+				<label for="select-based-flipswitch"></label>
+				<select id="status" data-role="flipswitch">
+				  <option value="off">Aus</option>
+				  <option value="on">An</option>
+				</select>
+			</fieldset>
 		</div>
+		<div style="clear:both;"></div>
+		<div id="lblTime" onclick="JavaScript:jQuery('#time').focus();jQuery('#time').click();">
+		13:00
+		</div>
+		
+		<input type="text" name="label" id="label" value="" placeholder="Label" data-clear-btn="true">
+		<div class="hideTimeBox">
+			<input type="time" name="time" id="time"/>
+		</div>
+		<input class="repeat" type="checkbox" name="repeat_once" id="repeat_once" value="once" checked="checked">
+		<label for="repeat_once">Nur einmal</label>
+		<input class="repeat" type="checkbox" name="repeat_multiply" id="repeat_multiply" value="multiply">	
+		<label for="repeat_multiply">Wiederholen</label>
+		<div data-role="controlgroup" data-type="horizontal" style="display: none;">
+		  <input type="button" class="ui-btn" value="Mo" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="Di" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="Mi" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="Do" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="Fr" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="Sa" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="So" data-theme="b"/>
+		</div>
+		<input type="hidden" value="" name="day[]"/>
 	</form>
+	<div id="debug_msg"></div>
   </div>
 </div>
  
  
-<div data-role="page" id="quiz">
+<div data-role="page" id="quiz" data-theme="b">
+ <!-- 
+<a href="#" class="btn large" onclick="ftsound.playAudio('res/sound.mp3');">Play Audio</a>
+<a href="#" class="btn large" onclick="ftsound.pauseAudio();">Pause Playing Audio</a>
+<a href="#" class="btn large" onclick="ftsound.stopAudio();">Stop Playing Audio</a>
+-->
+	<div data-role="content" class="frameborder">
+		<div class="frame colorframe">
+			<h1 id="quizlabel">Früh aufstehen!</h1>
+			<div id="quizlogo"><img src="./img/logo.png" alt="Logo"/></div>
+			<div id="quizdetails"><span class="time">06:30</span><br/><span class="date">Freitag, 13.06.2013</span></div>
+			<div style="clear:both;"></div>
+		</div>
+		<h2>Welcher Vogel zwitschert hier?</h2>
+		<div id="soundplayer"></div>
+		<div id="quiz_output">
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="result" data-theme="b">
   <div data-role="header">
-    <h1>zzZwitscherwecker | Quiz</h1>
-	<a href="index.html" data-icon="bars">Menu</a>
+    <h1>zzZwitscherwecker</h1>
+	<a href="#panel_settings" data-icon="clock" class="btnmenu"></a>
   </div>
+	
+	<div data-role="panel" id="mypanel2" data-position="left" data-display="overlay" class="frameborder">
+		<div data-role="controlgroup">
+			<a href="#panel_settings" data-role="button" data-icon="clock">Einstellen</a>
+			<a href="#information" data-role="button" data-icon="info">Information</a>
+		</div>
+	</div>
+  
   <div data-role="content">
-	<audio controls>
-		<source src="horse.mp3" type="audio/mpeg">
-		Your mobile does not support the audio element.
-	  </audio>
-    <div class="ui-grid-a">
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
-		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+	<div class="result frameborder">
+		<div class="frame colorframe">
+			<h2>Richtig, <span class='resBirdName'>Amsel</span> hat gezwitschert.</h2>
+			<img src="./res/1.jpg"/ class="resBirdImg">
+			<div class="resAudio"></div>
+			<a href="" target="_system"></a>
+			<p class="resAbs"></p>
+		</div>
+		
 	</div>
-	<div class="ui-grid-a">
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
-		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block D</div></div>
-	</div>
+	
   </div>
 </div>
 
-<div data-role="page" id="alarm">
+<div data-role="page" id="information" data-theme="b">
   <div data-role="header">
-    <h1>zzZwitscherwecker</h1>	
+    <h1>zzZwitscherwecker</h1>
+	<a href="#panel_settings" data-icon="clock" class="btnmenu"></a>
   </div>
-  <div data-role="content">
-  <audio controls>
-	<source src="horse.mp3" type="audio/mpeg">
-	Your mobile does not support the audio element.
-  </audio>
-    <div class="ui-grid-a">
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block A</div></div>
-		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block B</div></div>
+	
+	<div data-role="panel" id="mypanel3" data-position="left" data-display="overlay">
+		<div data-role="controlgroup">
+			<a href="#panel_settings" data-role="button" data-icon="clock">Einstellen</a>
+		</div>
 	</div>
-	<div class="ui-grid-a">
-		<div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:60px">Block C</div></div>
-		<div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:60px">Block D</div></div>
-	</div>
-  </div>
-</div>
-
-
-<div data-role="page" id="information">
-  <div data-role="header">
-    <h1>zzZwitscherwecker | Information</h1>
-	<a href="index.html" data-icon="bars">Menu</a>
-  </div>
+  
   <div data-role="content">
-	<div data-role="collapsible" data-content-theme="false">
+	<div data-role="collapsible" data-content-theme="b">
 		<h4>Autoren</h4>
 		<p>I'm the collapsible content without a theme.</p>
 	</div>
-	<div data-role="collapsible" data-content-theme="false">
-		<h4>Credential</h4>
+	<div data-role="collapsible" data-content-theme="b">
+		<h4>Credentials</h4>
 		<p>I'm the collapsible content without a theme.</p>
 	</div>
-	<div data-role="collapsible" data-content-theme="false">
+	<div data-role="collapsible" data-content-theme="b">
 		<h4>Datenschutz</h4>
 		<p>I'm the collapsible content without a theme.</p>
 	</div>
@@ -114,21 +142,51 @@
 </div>
   
         <script type="text/javascript" src="cordova.js"></script>
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/jquery.mobile-1.4.2.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>        
 		<script type="text/javascript" src="js/alarm.js"></script>
+		<script type="text/javascript" src="js/sound.js"></script>
+		<script type="text/javascript" src="js/file.js"></script>
+		<script type="text/javascript" src="js/quiz.js"></script>
+		<script type="text/javascript" src="js/theme.js"></script>
+		<script type="text/javascript" src="js/jquery.sha256.min.js"></script>
         <script type="text/javascript">
-            app.initialize();
-        </script>
+			var phoneapp = (typeof cordova == "undefined")?false:true;
+            
+			function initializeApp(){
+				ftalarm.loadFS();
+				ftalarm.initialize();
+				fttheme.initialize();
+				ftquiz.initialize();
+				document.addEventListener("resume", function(){
+					ftalarm.loadFS();
+				}, false);
+				
+			}
+			//Load on mobile device
+			if(phoneapp){
+				document.addEventListener('deviceready', initializeApp, false);
+				//when the alarm is triggered show quiz screen
+				document.addEventListener('resume', function(){
+					if(ftquiz.stats.start > 0 && ftquiz.stats.end == null){
+						$.mobile.navigate( "#quiz" );
+					}
+				}, false);
+				
+				//All links with _blank target open in external browser
+				jQuery('a[target="_blank"]').on('click', function(el){
+					e = $(el);
+					
+					return false;
+				});
+				
+			//Load on web
+			} else {
+				jQuery( document ).ready(initializeApp);
+			}
+			
 
-<script>
-$(function() {
-  $( ".myButton" ).on( "click", function() {
-    var whichPageId = $.mobile.activePage.attr( "id" );
-    $( ".myResult" ).html( "This is " + whichPageId );
-  });
-});
-</script>	 
+        </script>
+	 
  </body>
 </html>

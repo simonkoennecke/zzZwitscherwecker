@@ -1,12 +1,15 @@
-# view AndroidManifest.xml #generated:12
+# view AndroidManifest.xml #generated:11
 -keep class de.appplant.cordova.plugin.localnotification.Receiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:18
+# view AndroidManifest.xml #generated:17
 -keep class de.appplant.cordova.plugin.localnotification.ReceiverActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:13
+# view AndroidManifest.xml #generated:12
 -keep class de.appplant.cordova.plugin.localnotification.Restore { <init>(...); }
 
-# view AndroidManifest.xml #generated:6
+# view AndroidManifest.xml #generated:5
 -keep class de.farbtrommel.zwitscherwecker.zzZwitscherwecker { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class org.chromium.AlarmReceiver { <init>(...); }
 
