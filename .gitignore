@@ -1,4 +1,5 @@
 /platforms/android/assets/*
 /platforms/android/ant-build/*
 /platforms/android/ant-gen/*
+/platforms/android/CordovaLib/*
 *.apk
