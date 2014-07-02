@@ -57,6 +57,9 @@ generateBirdList: function() {
  * Start a new Quiz Game
  */
 setBirds: function () {
+	//Reset flagged Answers
+	jQuery('div.quizanswer').removeClass('answer-wrong answer-right')
+
 	//Data is already loaded
 	if(ftquiz.data != undefined && ftquiz.data != null){
 		ftquiz.chooseBirds(ftquiz.data)
@@ -83,6 +86,12 @@ chooseBirds: function (xml) {
 	//this stores the random numbers taken, to avoid multiple choice of equivalent numbers
 	chosenNumbers = [];
 	
+	//Work-around seed the Math rand function
+	var seed = Math.floor((Math.random() * 30) + 1);
+	for (var i = 0; i < seed; i++) {
+		Math.random();
+	}
+
 	correctAnwser = Math.floor((Math.random() * ftquiz.counter) + 1);
 	var total = ftquiz.data.find('bird').length;
 	
@@ -114,7 +123,7 @@ setQuizDetails: function(i, correctAnwser, xml){
 	//manipulate the html-page to fill in the birds-data
 	//list
 	var answer = $('#quiz_answer_' + i);
-	answer.parent().css("background-image", "url('res/"+id+".jpg')");
+	answer.parent().css("background-image", "url('res/thumbnails/"+id+".jpg')");
 	answer.attr('data-id',id);
 	answer.find('.birdimg').attr('src', 'res/'+id+'.jpg');
 	answer.find('.birdname').text(name);
@@ -124,8 +133,7 @@ setQuizDetails: function(i, correctAnwser, xml){
 	
 	//set onclick events (is anwser correct, id)
 	if (correctAnwser === i) {
-		answer.attr('onclick', 'ftquiz.clicked(1,' + i + ');');
-		ftquiz.stats.answer = id;
+		answer.attr('onclick', 'ftquiz.clicked(1,' + i + ');');		
 		ftquiz.currentBird = id;
 	}
 	else {
@@ -134,9 +142,14 @@ setQuizDetails: function(i, correctAnwser, xml){
 },
 onQuizStart: function(){
 
-	try{		
+	try{
+		 $.mobile.loading('hide');
+
 		//Play sound
 		ftsound.playAudio('res/'+ftquiz.currentBird+'.mp3');
+		
+		ftquiz.stats.answer = ftquiz.currentBird;
+		
 		if(phoneapp){
 			//Push notification
 			window.plugin.notification.local.add({ title:'zzZwtischerwecker', message: ftalarm.settings.label, id: 'zwtischerwecker', autoCancel: false,  ongoing: true});
@@ -173,7 +186,7 @@ sendStats: function(stats){
 	$.ajax({
 			type: "POST",
 			//URL to the Stats-Server
-			url: "https://www.farbtrommel.de/api/v1/zwitscherwecker/stats",
+			url: "https://www.farbtrommel.de/api/v1/zwitscherwecker/stats/",
 			dataType: "json",
 			data: "data="+JSON.stringify(stats),
 			crossDomain: true ,
@@ -200,12 +213,22 @@ clicked: function (bool, id) {
 		answer.addClass('answer-right');
 		ftquiz.stats.end = Date.now();
 		ftquiz.stats.options = jQuery.makeArray(jQuery('div.quizanswer').map(function(i, el){return parseInt($(el).attr('data-id'));}));
-		
+		$.mobile.loading('show');
 		//throw event
 		jQuery(document).trigger('ftAlarmEnd', ftquiz.stats);
 		
     } else { //wrong anwser
 		answer.addClass('answer-wrong');
+		//Two wrong guesses start new game
+		if(jQuery('div.quizanswer.answer-wrong').length == 2){
+			jQuery('div.quizanswer').addClass('answer-wrong');
+			jQuery('div.quizanswer[data-id='+ftquiz.currentBird+']').addClass('answer-right');
+			ftsound.stopAudio();
+			$.mobile.loading('show'); 
+			setTimeout(function(){
+				ftquiz.setBirds();
+			}, 1000);
+		}
     }
 }
 }; 

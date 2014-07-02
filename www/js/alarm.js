@@ -177,7 +177,8 @@ var ftalarm = {
 			}
 			jQuery('#time').scroller({'preset': 'time', 'theme': "android-ics light", 'mode': "mixed", 'lang': "de"});
 
-			jQuery('#lblTime').click(function() {
+			jQuery('#lblTime').click(function(ev) {
+				ev.preventDefault();
                 jQuery('#time').scroller('show');
                 return false;
             });

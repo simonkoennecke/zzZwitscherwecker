@@ -112,8 +112,13 @@ var ftsound = {
 		//document.getElementById('audio_position').innerHTML = position;
 	},
 	getPhoneGapPath: function() {
-		var path = window.location.pathname;
-		path = path.substring( 0, path.lastIndexOf('/') + 1 );
-		return 'file://' + path;
+		if(phoneapp){
+			var path = window.location.pathname;
+			path = path.substring( 0, path.lastIndexOf('/') + 1 );
+			return 'file://' + path;
+		}
+		else{
+			return '';
+		}
 	}
 }

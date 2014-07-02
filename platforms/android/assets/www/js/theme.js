@@ -1,7 +1,6 @@
-fttheme = {
+var fttheme = {
 initialize: function(){
 	if(phoneapp){
-		navigator.accelerometer.getCurrentAcceleration(fttheme.accelerationOnSuccess, fttheme.onError);
 		document.addEventListener("backbutton", fttheme.backButtonHandler, false);
 	}
 	
@@ -55,15 +54,6 @@ time: function(){
 		txt.trigger('change');
 	}
 },
-accelerationOnSuccess: function(acceleration) {
-	console.log('Acceleration X: ' + acceleration.x + '\n' +
-	  'Acceleration Y: ' + acceleration.y + '\n' +
-	  'Acceleration Z: ' + acceleration.z + '\n' +
-	  'Timestamp: '      + acceleration.timestamp + '\n');
-	  xtilt = (acceleration.x)*10
-	  ytilt = (acceleration.y)*10
-	jQuery(".ui-page .content").css({'padding': xtilt + 'px ' + ytilt + 'px;'})
-},
 showQuizResult: function (event, ui) {
 	var id = parseInt($('#quiz .answer-right').attr('data-id'));
 	console.log('ShowQuizResult (id: '+id+')');
@@ -73,12 +63,14 @@ showQuizResult: function (event, ui) {
 	var name = $(x).find("name").text();
 	var sciname = $(x).find("sciname").text();
 	var abs = $(x).find("abs").text();
+	var wikiLink = $(x).find("link").text();
 	
 	var html = $('#result');
 	html.find('.resBirdName').html(name);
 	html.find('.resBirdImg').attr('src', 'res/'+id+'.jpg');
 	html.find('.resAudio').attr('src', 'res/'+id+'.mp3');
 	html.find('.resAbs').html(abs);
+	jQuery('div.moreinformation a').attr('href', wikiLink);
 	
 	if(!phoneapp){
 		html.find('.resAudio').html("<audio src=\"res/"+id+".mp3\"  controls loop>"+
@@ -86,9 +78,28 @@ showQuizResult: function (event, ui) {
 			"</audio>");
 	}
 	else{
-		html.find('.resAudio').html('<a href="#" class="btn large audio-play" onclick="ftsound.playAudio(\'res/'+id+'.mp3\');">Play Audio</a>' +
-									'<a href="#" class="btn large audio-stop" onclick="ftsound.stopAudio();">Stop Playing Audio</a>');
+		fttheme.buttonPlayNativeSound(id);		
 	}
+},
+buttonPlayNativeSound: function(soundid){
+	jQuery('#result .resAudio').html(
+		'<div class="ui-btn ui-input-btn ui-btn-b ui-corner-all ui-shadow ui-first-child audiocontrol glyphicon glyphicon-volume-up" onclick="fttheme.btnPlayHandler(' + soundid + ')"></div>');
+	return false;
+},
+btnPlayHandler: function(soundid){
+	var el = $('#result .resAudio .audiocontrol');
+	if(el.hasClass('glyphicon-volume-up')){
+		ftsound.playAudio('res/' + soundid + '.mp3');
+		el.removeClass('glyphicon-volume-up');
+		el.addClass('glyphicon-volume-off');
+	}
+	else{
+		ftsound.stopAudio();
+		el.addClass('glyphicon-volume-up');
+		el.removeClass('glyphicon-volume-off');
+	}
+	
+	return false;
 },
 displayTime: function(d){
 	return ((d.getHours()<10)?"0":"") + d.getHours() + ':' + ((d.getMinutes()<10)?"0":"") + d.getMinutes();

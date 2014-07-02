@@ -41,7 +41,9 @@
     </feature>
     <name>zzZwitscherwecker</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Der zzZwitscherwecker singt dir jeden Morgen ein anderes Lied vor. Um ihn auszuschalten, kannst du aus vier Vorschlägen den Vogel erraten, der dich geweckt hat. Liegst du richtig, bekommst du weitere Infos, liegst du falsch darfst du noch einmal raten. 
+Du wirst also sanft geweckt und kannst gleichzeitig mehr über die Vögel lernen, die bei uns unterwegs sind. 
+Specht und Uhu sind auch von Hobby-Ornithologen schnell erraten, aber kannst du auch eine Nachtigall von von einem Sperling unterscheiden? Probiere es aus!
     </description>
     <author email="laut@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
         Simon Koennecke		

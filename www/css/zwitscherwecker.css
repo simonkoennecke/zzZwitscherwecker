@@ -96,19 +96,21 @@ div.ui-flipswitch a.ui-flipswitch-on.ui-btn.ui-shadow.ui-btn-inherit,
 	margin-right: 0;
 }
 body, .ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper{	
-	background: url('../img/HG_962x720.png') no-repeat fixed center center;
+	background: url('../img/bg.png') no-repeat fixed center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-@media only screen and (min-width: 960px) {
+
+@media  (min-width: 960px) {
+    body, .ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper{
+		background: url('../img/HG_962x720.png') no-repeat fixed center center;
+	}
+}
+@media (min-width: 1400px) {
     body, .ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper{
 		background: url('../img/HG_1400x1040.png') no-repeat fixed center center;
-		-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 	}
 }
 
