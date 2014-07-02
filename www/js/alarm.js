@@ -175,7 +175,14 @@ var ftalarm = {
 			} else {
 				jQuery( ftalarm.config.form + ' input[type=button]').on('click', ftalarm.view.onFormularEvent);
 			}
-			
+			jQuery('#time').scroller({'preset': 'time', 'theme': "android-ics light", 'mode': "mixed", 'lang': "de"});
+
+			jQuery('#lblTime').click(function() {
+                jQuery('#time').scroller('show');
+                return false;
+            });
+
+
 			//onchange save
 			jQuery( ftalarm.config.form + ' input[type!=button]').on('change', ftalarm.view.onFormularEvent);
 			jQuery( ftalarm.config.form + ' select').on('change', ftalarm.view.onFormularEvent);
