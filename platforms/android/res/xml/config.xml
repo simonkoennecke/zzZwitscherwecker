@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="de.farbtrommel.zwitscherwecker" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="de.farbtrommel.zwitscherwecker" version="0.0.25" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="App">
         <param name="android-package" value="org.apache.cordova.App" />
@@ -45,7 +45,7 @@
 Du wirst also sanft geweckt und kannst gleichzeitig mehr über die Vögel lernen, die bei uns unterwegs sind. 
 Specht und Uhu sind auch von Hobby-Ornithologen schnell erraten, aber kannst du auch eine Nachtigall von von einem Sperling unterscheiden? Probiere es aus!
     </description>
-    <author email="laut@farbtrommel.de" href="http://www.farbtrommel.de/projekte/zzzwitscherwecker">
+    <author email="laut@farbtrommel.de" href="http://www.farbtrommel.de/zwitscherwecker">
         Simon Koennecke		
     </author>
     <content src="index.html" />
