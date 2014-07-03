@@ -10,7 +10,7 @@ initialize: function(){
 	jQuery('#result').bind('pagebeforeshow',function (event, ui) {fttheme.showQuizResult()});
 	jQuery(document).on('ftAlarmEnd', function(ev){fttheme.showQuizResult()});
 	
-	jQuery('.repeat').on('change', fttheme.checkbox)
+	jQuery('.repeat').on('change', fttheme.checkbox);
 },
 checkbox: function(ev){
 	var m = $("#repeat_multiply");
