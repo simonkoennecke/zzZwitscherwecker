@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skip>
+		<abbr>Bubo bubo</abbr>
+		<abbr>Luscinia svecica</abbr>
+		<abbr>Lullula arborea</abbr>
+		<abbr>Athene noctua</abbr>
+		<abbr>Oriolus oriolus</abbr>
+		<abbr>Cygnus cygnus</abbr>
+		<abbr>Phoenicurus phoenicurus</abbr>
+		<abbr>Luscinia megarhynchos</abbr>
+		<abbr>Larus argentatus</abbr>
+		<abbr>Phylloscopus trochilus</abbr>
+		<abbr>Carduelis carduelis</abbr>
+		<abbr>Passer montanus</abbr>
+		<abbr>Emberiza citrinella</abbr>
+		<abbr>Phylloscopus collybita</abbr>
+		<abbr>Anser anser</abbr>
+		<abbr>Garrulus glandarius</abbr>
+		<abbr>Dendrocopos major</abbr>
+		<abbr>Fulica atra</abbr>
+		<abbr>Erithacus rubecula</abbr>
+		<abbr>Ardea cinerea</abbr>
+		<abbr>Buteo buteo</abbr>
+		<abbr>Corvus corone</abbr>
+		<!--abbr>Anas platyrhynchos</abbr--> <!-- no wiki-page-->
+		<abbr>Columba palumbus</abbr>
+		<abbr>Delichon urbicum</abbr>
+		<abbr>Fringilla coelebs</abbr>
+		<abbr>Grus grus</abbr>
+		<abbr>Parus major</abbr>
+		<abbr>Phalacrocorax carbo</abbr>
+		<abbr>Pica pica</abbr>
+		<abbr>Falco tinnunculus</abbr>
+</skip>
