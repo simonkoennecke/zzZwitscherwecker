@@ -6,11 +6,7 @@ package org.chromium;
 
 import org.chromium.Alarm;
 
-import org.apache.cordova.CordovaArgs;
-import org.apache.cordova.CordovaWebView;
-import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CordovaInterface;
-import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -22,6 +18,7 @@ import android.util.Log;
 
 import org.apache.cordova.Config;
 
+
 public class ChromeAlarms extends CordovaPlugin {
 
     public static final String ALARM_NAME_LABEL = "alarmName";
@@ -30,12 +27,19 @@ public class ChromeAlarms extends CordovaPlugin {
     private AlarmManager alarmManager;
 
     public static void triggerAlarm(Context context, Intent intent) {
-        if (webView != null) {
+		
+        if (webView != null) {            
             String name = intent.getStringExtra(ALARM_NAME_LABEL);
             String javascript = "chrome.alarms.triggerAlarm('" + name + "')";
-            webView.sendJavascript(javascript);
-        } else {
-            intent.addFlags(Intent.FLAG_FROM_BACKGROUND);
+            webView.sendJavascript(javascript);            
+        } else {		
+			//http://stackoverflow.com/questions/17699047/need-to-run-my-app-before-the-unlock-screen-in-android
+			//cordova.getActivity().getWindow().setFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+			
+            //intent.addFlags(Intent.FLAG_FROM_BACKGROUND);
+			intent.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             context.startActivity(intent);
         }
     }

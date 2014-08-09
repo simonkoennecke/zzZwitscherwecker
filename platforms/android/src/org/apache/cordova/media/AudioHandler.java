@@ -376,11 +376,13 @@ public class AudioHandler extends CordovaPlugin {
     }
 	
 	public void setMaxVolume(String id){
+		/*
 		//Add by SK
 		AudioManager audioManager = (AudioManager) this.cordova.getActivity().getSystemService(Context.AUDIO_SERVICE);
 		//if(audioManager.getStreamMaxVolume(id) < audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)){
 			audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,
 				audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC), 0);
 		//}
+		*/
 	}
 }

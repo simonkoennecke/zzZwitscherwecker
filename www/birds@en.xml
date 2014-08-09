@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<birds>
+	<bird id="1">
+	  <name>Eagle owl</name>
+	  <sciname>Bubo bubo</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Uhu-muc.jpg/200px-Uhu-muc.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Uhu-muc.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz 3.0</lizenz>
+		<author>http://de.wikipedia.org/wiki/Benutzer:Softeis</author>
+	  </img>
+	  
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Eagle-Owl</link>
+	  <mp3 src="http://species-id.net/o/media/6/61/Bubo_bubo_TSA-medium.mp3" length="0:27"/>
+	  <abs>The Eurasian Eagle-Owl (Bubo bubo) is a species of eagle owl resident in much of Eurasia. It is sometimes called the European Eagle-Owl and is, in Europe where it is the only member of its genus besides the Snowy Owl (B. scandiacus), occasionally abbreviated to just Eagle-Owl. In India, it is often called the Indian Great Horned Owl, though this may cause confusion with the similarly-named American bird. It is one of the largest species of owls</abs>
+	</bird>
+	<bird id="2">
+	  <name>Bluethroat</name>
+	  <sciname>Luscinia svecica</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Luscinia_svecica_volgae.jpg/200px-Luscinia_svecica_volgae.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Luscinia_svecica_volgae.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative-Commons-Lizenz 3.0</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Bogomolov.PL">Bogomolov.PL</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Bluethroat</link>
+	  <mp3 src="http://species-id.net/o/media/1/14/Luscinia_svecica_TSA-medium.mp3" length="0:33"/>
+	  <abs>The Bluethroat (Luscinia svecica) is a small passerine bird that was formerly classed as a member of the thrush family Turdidae, but is now more generally considered to be an Old World flycatcher, Muscicapidae. It, and similar small European species, are often called chats. It is a migratory insectivorous species breeding in wet birch wood or bushy swamp in Europe and Asia with a foothold in western Alaska. It nests in tussocks or low in dense bushes. It winters in north Africa and the Indian Subcontinent. The Bluethroat is similar in size to the European Robin at 13–14 cm. It is plain brown above except for the distinctive black tail with red side patches. It has a strong white supercilium. The male has a blue bib edged below with successive black, white and rust coloured borders. Some races, such as L. svecica svecica (Red-spotted Bluethroat) of northern Eurasia, have a red spot in the centre of the blue bib. Others, such as L. svecica cyanecula (White-spotted Bluethroat) of southern and central Europe, have a white spot in the centre of the blue bib. L. svecica magna in Turkey has no central spot. Females of all races usually have just a blackish crescent on an otherwise cream throat and breast. Newly fledged juveniles are freckled and spotted dark brown above. Despite the distinctive appearance of the males, recent genetic studies show only limited variation between the forms, and confirm that this is a single species. The male has a varied and very imitative song. Its call is a typical chat “chack” noise.</abs>
+	</bird>
+	<bird id="3">
+	  <name>Woodlark</name>
+	  <sciname>Lullula arborea</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Lullula_arborea_Rodrigo)de_Almeida.jpg/200px-Lullula_arborea_Rodrigo)de_Almeida.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Lullula_arborea_Rodrigo)de_Almeida.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative-Commons-Lizenz 2.0</lizenz>
+		<author href="http://www.flickr.com/people/32639361@N02">Rodrigo de Almeida</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Woodlark</link>
+	  <mp3 src="http://species-id.net/o/media/3/3b/Lullula_arborea_TSA-medium.mp3" length="0:22"/>
+	  <abs>The Woodlark (Lullula arborea) is the only lark in the genus Lullula. It breeds across most of Europe, the Middle East Asia and the mountains of north Africa. It is mainly resident in the west of its range, but eastern populations of this passerine bird are more migratory, moving further south in winter. Even in the milder west of its range, many birds move south in winter. This is a 13.5–15 cm long bird of open heath with some trees, and other open woodlands, especially those with pines and light soil. Its generic name derives from its sweet plaintive song, delivered in flight from heights of 100 m or more. Like most other larks, this is an undistinguished-looking species on the ground, mainly brown above and pale below, but with distinctive white superciliar meeting on the nape. In flight it shows a short tail and short broad wings. The tail is tipped with white, but unlike the Skylark, the tail sides and the rear edge of the wings are not edged with white. The nest is on the ground, with up to 6 eggs being laid. Food is seeds supplemented with insects in the breeding season.</abs>
+	</bird>
+	<bird id="4">
+	  <name>Little Owl</name>
+	  <sciname>Athene noctua</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Mochuelo_Común_(_Athene_noctua_)(1).jpg/200px-Mochuelo_Común_(_Athene_noctua_)(1).jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Mochuelo_Com%C3%BAn_(_Athene_noctua_)(1).jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.0/deed.en">Creative-Commons-Lizenz 2.0</lizenz>
+		<author href="http://flickr.com/photos/chausinho/">Arturo Nikolai</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Little_Owl</link>
+	  <mp3 src="http://species-id.net/o/media/3/36/Athene_noctua_TSA-medium.mp3" length="0:22"/>
+	  <abs>The Little Owl (Athene noctua) is a bird which is resident in much of the temperate and warmer parts of Europe, Asia east to Korea, and north Africa. It is not native to Great Britain, but was first introduced in 1842, by Thomas Powys and is now naturalised there. It was also successfully introduced to the South Island of New Zealand in the early 20th century. This species is a part of the larger grouping of owls known as typical owls, Strigidae, which contains most species of owl. The other grouping is the barn owls, Tytonidae.</abs>
+	</bird>
+	<bird id="5">
+	  <name>Golden Oriole</name>
+	  <sciname>Oriolus oriolus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Oriole_2.jpg/200px-Oriole_2.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Oriole_2.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative-Commons-Lizenz 3.0</lizenz>
+		<author href="http://pl.wikipedia.org/wiki/Wikipedysta:Dixi">Dixi</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Golden_Oriole</link>
+	  <mp3 src="http://species-id.net/o/media/c/c0/Oriolus_oriolus_TSA-medium.mp3" length="0:22"/>
+	  <abs>The Eurasian Golden Oriole or simply Golden Oriole (Oriolus oriolus) is the only member of the oriole family of passerine birds breeding in northern hemisphere temperate regions. It is a summer migrant in Europe and western Asia and spends the winter season in central and southern Africa. Golden orioles have an extremely large range with large populations that are apparently stable. Therefore, they are evaluated as least concern by BirdLife International.</abs>
+	</bird>
+	<bird id="6">
+	  <name>Whooper Swan</name>
+	  <sciname>Cygnus cygnus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Singschwan.jpg/200px-Singschwan.jpg" >
+		<link href="http://commons.wikimedia.org/wiki/File:Singschwan.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</lizenz>
+		<author href="http://photo-natur.de/">Andreas Trepte</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Whooper_Swan</link>
+	  <mp3 src="http://species-id.net/o/media/9/97/Cygnus_cygnus_TSA-medium.mp3" length="0:24"/>
+	  <abs>The Whooper Swan (pronounced hooper), Cygnus cygnus, is a large Northern Hemisphere swan. It is the Eurasian counterpart of the North American Trumpeter Swan. An old name for the Whooper Swan is 'Elk'; it is so called in Francis Willughby and John Ray's Ornithology of 1676.</abs>
+	</bird>
+	<bird id="7">
+	  <name>Redstart</name>
+	  <sciname>Phoenicurus phoenicurus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gekraagde_Roodstaart_20040627.JPG/200px-Gekraagde_Roodstaart_20040627.JPG">
+		<link href="http://commons.wikimedia.org/wiki/File:Gekraagde_Roodstaart_20040627.JPG"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://en.wikipedia.org/wiki/User:Debot">Debot</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Redstart</link>
+	  <mp3 src="http://species-id.net/o/media/9/91/Phoenicurus_phoenicurus_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Common Redstart (Phoenicurus phoenicurus), or often simply Redstart, is a small passerine bird in the redstart genus Phoenicurus. Like its relatives, it was formerly classed as a member of the Thrush family (Turdidae), but is now known to be an Old World flycatcher (Muscicapidae).</abs>
+	</bird>
+	<bird id="8">
+	  <name>Nightingale</name>
+	  <sciname>Luscinia megarhynchos</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nachtigall_(Luscinia_megarhynchos)-2.jpg/200px-Nachtigall_(Luscinia_megarhynchos)-2.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Nachtigall_(Luscinia_megarhynchos)-2.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Bogbumper">J. Dietrich</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Nightingale</link>
+	  <mp3 src="http://species-id.net/o/media/f/fa/Luscinia_megarhynchos_TSA-medium.mp3" length="0:32"/>
+	  <abs>The Common Nightingale or simply Nightingale (Luscinia megarhynchos), also known as Rufous Nightingale, is a small passerine bird that was formerly classed as a member of the thrush family Turdidae, but is now more generally considered to be an Old World flycatcher, Muscicapidae. It belongs to a group of more terrestrial species, often called chats.</abs>
+	</bird>
+	<bird id="9">
+	  <name>Herring Gull</name>
+	  <sciname>Larus argentatus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Larus_argentatus01.jpg/200px-Larus_argentatus01.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Larus_argentatus01.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Kulac">Kulac</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/European_Herring_Gull</link>
+	  <mp3 src="http://species-id.net/o/media/e/ec/Larus_argentatus_TSA-medium.mp3" length="0:19"/>
+	  <abs>The European Herring Gull (Larus argentatus) is a large gull (up to 26 inches or 66 cm long). One of the best known of all gulls along the shores of western Europe, it was once abundant. It breeds across Northern Europe, Western Europe, Central Europe, Eastern Europe, Scandinavia and the Baltic states. Some European Herring Gulls, especially those resident in colder areas, migrate further south in winter, but many are permanent residents, e.g. in the British Isles, Iceland, or on the North Sea shores. European Herring Gulls are also abundant around inland rubbish dumps, and some have even adapted to life in inland cities.</abs>
+	</bird>
+	<bird id="10">
+	  <name>Willow Warbler</name>
+	  <sciname>Phylloscopus trochilus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Willow_Warbler_Phylloscopus_trochilus.jpg/200px-Willow_Warbler_Phylloscopus_trochilus.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Willow_Warbler_Phylloscopus_trochilus.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</lizenz>
+		<author href="http://photo-natur.de/">Andreas Trepte</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Willow_Warbler</link>
+	  <mp3 src="http://species-id.net/o/media/8/86/Phylloscopus_trochilus_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Willow Warbler (Phylloscopus trochilus) is a very common and widespread leaf warbler which breeds throughout northern and temperate Europe and Asia, from Ireland east to the Anadyr River basin in eastern Siberia. It is strongly migratory, with almost all of the population wintering in sub-Saharan Africa. It is a bird of open woodlands with trees and ground cover for nesting, including most importantly birch, alder, and willow habitats. The nest is usually built in close contact with the ground, often in low vegetation. Like most Old World warblers, this small passerine is insectivorous. In northern Europe, it is one of the first warblers to return in the spring though is later than the closely related Chiffchaff Phylloscopus collybita.</abs>
+	</bird>
+	<bird id="11">
+	  <name>Goldfinch</name>
+	  <sciname>Carduelis carduelis</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Carcar.jpg/200px-Carcar.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Carcar.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Kookaburra_81">Pierre Dalous</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/European_Goldfinch</link>
+	  <mp3 src="http://species-id.net/o/media/8/86/Carduelis_carduelis_TSA-medium.mp3" length="0:23"/>
+	  <abs>The average goldfinch is 12–13 cm long with a wingspan of 21–25 cm and a weight of 14 to 19 grams. The sexes are broadly similar, with a red face, black and white head, warm brown upperparts, white underparts with buff flanks and breast patches, and black and yellow wings.
+
+On closer inspection male goldfinches can often be distinguished by a larger, darker red mask that extends just behind the eye. In females, the red face does not reach the eye. The ivory-coloured bill is long and pointed, and the tail is forked. Goldfinches in breeding condition have a white bill, with a greyish or blackish mark at the tip for the rest of the year. Juveniles have a plain head and a greyer back but are unmistakable due to the yellow wing stripe. Birds in central Asia (caniceps group) have a plain grey head behind the red face, lacking the black and white head pattern of European and western Asian birds.</abs>
+	</bird>
+	<bird id="12">
+	  <name>Tree Sparrow</name>
+	  <sciname>Passer montanus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tree_Sparrow_Japan_Flip.jpg/200px-Tree_Sparrow_Japan_Flip.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Tree_Sparrow_Japan_Flip.jpg"/>
+		<lizenz href="http://commons.wikimedia.org/wiki/File:Tree_Sparrow_Japan_Flip.jpg">Public domain</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Laitche">Laitche</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Tree_Sparrow</link>
+	  <mp3 src="http://species-id.net/o/media/6/60/Passer_montanus_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Eurasian Tree Sparrow (Passer montanus) is a passerine bird in the sparrow family with a rich chestnut crown and nape, and a black patch on each pure white cheek. The sexes are similarly plumaged, and young birds are a duller version of the adult. This sparrow breeds over most of temperate Eurasia and Southeast Asia, where it is known as the Tree Sparrow, and it has been introduced elsewhere including the United States, where it is known as the Eurasian Tree Sparrow or German Sparrow to differentiate it from the native unrelated American Tree Sparrow. Although several subspecies are recognised, the appearance of this bird varies little across its extensive range. The Eurasian Tree Sparrow's untidy nest is built in a natural cavity, a hole in a building or the large nest of a European Magpie or White Stork. The typical clutch is five or six eggs which hatch in under two weeks. This sparrow feeds mainly on seeds, but invertebrates are also consumed, particularly during the breeding season. As with other small birds, infection by parasites and diseases, and predation by birds of prey take their toll, and the typical life span is about two years. The Eurasian Tree Sparrow is widespread in the towns and cities of eastern Asia, but in Europe it is a bird of lightly wooded open countryside, with the House Sparrow breeding in the more urban areas. The Eurasian Tree Sparrow's extensive range and large population ensure that it is not endangered globally, but there have been large declines in western European populations, in part due to changes in farming practices involving increased use of herbicides and loss of winter stubble fields. In eastern Asia and western Australia, this species is sometimes viewed as a pest, although it is also widely celebrated in oriental art.</abs>
+	</bird>
+	<bird id="13">
+	  <name>Yellowhammer</name>
+	  <sciname>Emberiza citrinella</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg/200px-Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Emberiza_citrinella_-New_Zealand_-North_Island-8.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</lizenz>
+		<author href="http://flickr.com/photos/32541690@N02">Alan Vernon</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Yellowhammer</link>
+	  <mp3 src="http://species-id.net/o/media/f/fc/Emberiza_citrinella_TSA-medium.mp3" length="0:23"/>
+	  <abs>The yellowhammer (Emberiza citrinella) is a passerine bird in the bunting family that is native to Eurasia and introduced to New Zealand. Most European birds remain in the breeding range year-round, but the eastern subspecies is partially migratory, with much of the population wintering further south. The male yellowhammer has a bright yellow head, streaked brown back, chestnut rump and yellow underparts. Other plumages are duller versions of the same pattern. The yellowhammer is common in open areas with some scrubs or trees, and forms small flocks in winter. It has a characteristic song with an "A little bit of bread and no cheese" rhythm. The song is very similar to that of its closest relative, the pine bunting, with which it interbreeds.</abs>
+	</bird>
+	<bird id="14">
+	  <name>Chiffchaff</name>
+	  <sciname>Phylloscopus collybita</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Phylloscopus_collybita_(taxobox).jpg/200px-Phylloscopus_collybita_(taxobox).jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Phylloscopus_collybita_(taxobox).jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Biopics">Hans Hillewaert</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Chiffchaff</link>
+	  <mp3 src="http://species-id.net/o/media/e/ef/Phylloscopus_collybita_TSA-medium.mp3" length="Gesang (Length: 0:28"/>
+	  <abs>The Common Chiffchaff, or simply the Chiffchaff, (Phylloscopus collybita) is a common and widespread leaf warbler which breeds in open woodlands throughout northern and temperate Europe and Asia. It is a migratory passerine which winters in southern and western Europe, southern Asia and north Africa. Greenish-brown above and off-white below, it is named onomatopoeically for its simple chiff-chaff song. It has a number of subspecies, some of which are now treated as full species. The female builds a domed nest on or near the ground, and assumes most of the responsibility for brooding and feeding the chicks, whilst the male has little involvement in nesting, but defends his territory against rivals, and attacks potential predators. A small insectivorous bird, it is subject to predation by mammals, such as cats and mustelids, and birds, particularly hawks of the genus Accipiter. Its large range and population mean that its status is secure, although one subspecies is probably extinct.</abs>
+	</bird>
+	<bird id="15">
+	  <name>Greylag Goose</name>
+	  <sciname>Anser anser</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Graugans_Anser_Anser.jpg/200px-Graugans_Anser_Anser.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Graugans_Anser_Anser.jpg"/>
+		<lizenz href="http://commons.wikimedia.org/wiki/File:Graugans_Anser_Anser.jpg">Public domain</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:H005">H005</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Greylag_Goose</link>
+	  <mp3 src="http://species-id.net/o/media/9/95/Anser_anser_TSA-medium.mp3" length="0:24"/>
+	  <abs>The Greylag Goose (also spelled Graylag in the United States), Anser anser, is a bird with a wide range in the Old World. It is the type species of the genus Anser. It was in pre-Linnean times known as the Wild Goose ("Anser ferus"). This species is the ancestor of domesticated geese in Europe and North America. Flocks of feral birds derived from domesticated birds are widespread. The Greylag Goose is one of the species to which the Agreement on the Conservation of African-Eurasian Migratory Waterbirds applies. Within science, the greylag goose is most notable as being the bird with which the ethologist Konrad Lorenz first did his major studying into the behavioural phenomenon of imprinting.</abs>
+	</bird>
+	<bird id="16">
+	  <name>Jay</name>
+	  <sciname>Garrulus glandarius</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Garrulus_glandarius_1_Luc_Viatour.jpg/200px-Garrulus_glandarius_1_Luc_Viatour.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Garrulus_glandarius_1_Luc_Viatour.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Lviatour">Luc Viatour</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Jay</link>
+	  <mp3 src="http://species-id.net/o/media/e/e2/Garrulus_glandarius_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Eurasian Jay (Garrulus glandarius) is a species of bird occurring over a vast region from Western Europe and north-west Africa to the Indian Subcontinent and further to the eastern seaboard of Asia and down into south-east Asia. Across its vast range, several very distinct racial forms have evolved to look very different from each other, especially when forms at the extremes of its range are compared. The bird is called jay, without any epithets, by English speakers in Great Britain and Ireland. It is the original 'jay' after which all others are named.</abs>
+	</bird>
+	<bird id="17">
+	  <name>Great Spotted Woodpecker</name>
+	  <sciname>Dendrocopos major</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buntspecht_Dendrocopos_major-2.jpg/200px-Buntspecht_Dendrocopos_major-2.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Buntspecht_Dendrocopos_major-2.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution 3.0 Unported</lizenz>
+		<author href="http://www.vogelruf.de/galerie/">Steffen Hannert</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Great_Spotted_Woodpecker</link>
+	  <mp3 src="http://species-id.net/o/media/0/03/Dendrocopos_major_TSA-medium.mp3" length="0:28"/>
+	  <abs>The Great Spotted Woodpecker (or Greater Spotted Woodpecker), Dendrocopos major, is a bird species of the woodpecker family (Picidae). It is distributed throughout Europe and northern Asia, and usually resident year-round except in the colder parts of its range. It is not considered a threatened species by the IUCN, being widely distributed and quite common. A significant recent increase in the British population has been suggested as the cause of the recolonisation of Ireland.</abs>
+	</bird>
+	<bird id="18">
+	  <name>Coot</name>
+	  <sciname>Fulica atra</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Eurasian_Coot.jpg/200px-Eurasian_Coot.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Eurasian_Coot.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://en.wikipedia.org/wiki/User:Noodle_snacks">Noodle snacks</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Coot</link>
+	  <mp3 src="http://species-id.net/o/media/9/9b/Fulica_atra_TSA-medium.mp3" length="0:15"/>
+	  <abs>The Eurasian Coot (Fulica atra), also known as Coot, is a member of the rail and crake bird family, the Rallidae. The Australian subspecies is known as the Australian Coot.</abs>
+	</bird>
+	<bird id="19">
+	  <name>Robin</name>
+	  <sciname>Erithacus rubecula</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Rouge_gorge_familier_-_crop_(WB_correction).jpg/200px-Rouge_gorge_familier_-_crop_(WB_correction).jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Rouge_gorge_familier_-_crop_(WB_correction).jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="PierreSelim">PierreSelim</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/European_Robin</link>
+	  <mp3 src="http://species-id.net/o/media/f/f8/Erithacus_rubecula_TSA-medium.mp3" length="0:25"/>
+	  <abs>The European Robin (Erithacus rubecula), most commonly known in Anglophone Europe simply as the Robin, is a small insectivorous passerine bird that was formerly classed as a member of the thrush family (Turdidae), but is now considered to be a chat. Around 12.5–14.0 cm (5.0–5.5 in) in length, the male and female are similar in colouration, with an orange breast and face lined with grey, brown upperparts and a whitish belly. It is found across Europe, east to Western Siberia and south to North Africa; it is sedentary in most of its range except the far north. The term Robin is also applied to some birds in other families with red or orange breasts. These include the American Robin (Turdus migratorius), which is a thrush, and the Australian red robins of the genus Petroica, members of a family whose relationships are unclear.</abs>
+	</bird>
+	<bird id="20">
+	  <name>Grey Heron</name>
+	  <sciname>Ardea cinerea</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Ardea_cinerea_-_Pak_Thale.jpg/200px-Ardea_cinerea_-_Pak_Thale.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Ardea_cinerea_-_Pak_Thale.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:JJ_Harrison">JJ Harrison</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Grey_Heron</link>
+	  <mp3 src="http://species-id.net/o/media/e/ee/Ardea_cinerea_TSA-medium.mp3" length="0:21"/>
+	  <abs>The Grey Heron (Ardea cinerea), is a wading bird of the heron family Ardeidae, native throughout temperate Europe and Asia and also parts of Africa. It is resident in the milder south and west, but many birds retreat in winter from the ice in colder regions. It has become common in summer even inside the Arctic circle along the Norwegian coast.</abs>
+	</bird>
+	<bird id="21">
+	  <name>Buzzard</name>
+	  <sciname>Buteo buteo</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Buteo_buteo_-Netherlands-8.jpg/200px-Buteo_buteo_-Netherlands-8.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Buteo_buteo_-Netherlands-8.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</lizenz>
+		<author href="http://www.flickr.com/people/19901746@N00">Arend</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Buzzard</link>
+	  <mp3 src="http://species-id.net/o/media/d/d1/Buteo_buteo_TSA-medium.mp3" length="0:21"/>
+	  <abs>The Common Buzzard (Buteo buteo) is a medium to Large bird of prey, whose range covers most of Europe and extends into Asia. It is usually resident all year, except in the coldest parts of its range, and in the case of one subspecies.</abs>
+	</bird>
+	<bird id="22">
+	  <name>Carrion Crow</name>
+	  <sciname>Corvus corone</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Corvus_corone_Rabenkrähe_1.jpg/200px-Corvus_corone_Rabenkrähe_1.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Corvus_corone_Rabenkr%C3%A4he_1.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://de.wikipedia.org/wiki/Benutzer:BS_Thurner_Hof">BS Thurner Hof</author>
+	  </img>>
+	  <link>http://en.wikipedia.org/wiki/Carrion_Crow</link>
+	  <mp3 src="http://species-id.net/o/media/2/2f/Corvus_corone_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Carrion Crow (Corvus corone) is a member of the passerine order of birds and the crow family which is native to western Europe and eastern Asia.</abs>
+	</bird>
+	<bird id="23">
+	  <name>Wood Pigeon</name>
+	  <sciname>Columba palumbus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Columba_palumbus_-garden_post-8.jpg/200px-Columba_palumbus_-garden_post-8.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Columba_palumbus_-garden_post-8.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</lizenz>
+		<author href="http://www.flickr.com/people/89056504@N00">Tristan Ferne</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Wood_Pigeon</link>
+	  <mp3 src="http://species-id.net/o/media/4/46/Columba_palumbus_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Common Wood Pigeon (Columba palumbus) is a large species in the dove and pigeon family. It belongs to the Columba genus and, like all pigeons and doves, belongs to the family Columbidae. It is locally known in southeast England as the Culver.</abs>
+	</bird>
+	<bird id="24">
+	  <name>House Martin</name>
+	  <sciname>Delichon urbicum</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Delichon_urbicum_-Iceland_-flying-8.jpg/200px-Delichon_urbicum_-Iceland_-flying-8.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Delichon_urbicum_-Iceland_-flying-8.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</lizenz>
+		<author href="http://www.flickr.com/people/29174969@N00">Ómar Runólfsson</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_House_Martin</link>
+	  <mp3 src="http://species-id.net/o/media/f/f1/Delichon_urbicum_TSA-medium.mp3" length="0:24"/>
+	  <abs>The Common House Martin (Delichon urbicum), sometimes called the Northern House Martin or, particularly in Europe, just House Martin, is a migratory passerine bird of the swallow family which breeds in Europe, north Africa and temperate Asia; and winters in sub-Saharan Africa and tropical Asia. It feeds on insects which are caught in flight, and it migrates to climates where flying insects are plentiful. It has a blue head and upperparts, white rump and pure white underparts, and is found in both open country and near human habitation. It is similar in appearance to the two other martin species of the Delichon genus, which are both endemic to eastern and southern Asia. It has two accepted subspecies. Both the scientific and colloquial name of the bird are related to its use of man-made structures. It builds a closed cup nest from mud pellets under eaves or similar locations on buildings usually in colonies, but sometimes fouling below nests can be a problem. It is hunted by the Eurasian Hobby (Falco subbuteo), and like other birds is affected by internal parasites and external fleas and mites, but its large range and population mean that it is not threatened globally. Its proximity to man is generally accepted leading to some cultural and literary references.</abs>
+	</bird>
+	<bird id="25">
+	  <name>Chaffinch</name>
+	  <sciname>Fringilla coelebs</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chaffinch_(Fringilla_coelebs).jpg/200px-Chaffinch_(Fringilla_coelebs).jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Chaffinch_(Fringilla_coelebs).jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</lizenz>
+		<author href="http://photo-natur.de/">Andreas Trepte</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Chaffinch</link>
+	  <mp3 src="http://species-id.net/o/media/d/d4/Fringilla_coelebs_TSA-medium.mp3" length="0:24"/>
+	  <abs>The Common Chaffinch (Fringilla coelebs), also called by a wide variety of other names, is a small passerine bird in the finch family Fringillidae.</abs>
+	</bird>
+	<bird id="26">
+	  <name>Crane</name>
+	  <sciname>Grus grus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Grus_grus_1_(Marek_Szczepanek).jpg/200px-Grus_grus_1_(Marek_Szczepanek).jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Grus_grus_1_(Marek_Szczepanek).jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Pkuczynski/Marek_Szczepanek">Marek Szczepanek</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Crane</link>
+	  <mp3 src="http://species-id.net/o/media/5/5f/Grus_grus_TSA-medium.mp3" length="0:27"/>
+	  <abs>The Common Crane (Grus grus), also known as the Eurasian Crane, is a bird of the family Gruidae, the cranes. A medium-sized species, it is the only crane commonly found in Europe besides the Demoiselle Crane. It is also one of only four crane species (with the Sandhill and Demoiselle Cranes and the Brolga) not currently classified as threatened with extinction or conservation dependent at the species level.</abs>
+	</bird>
+	<bird id="27">
+	  <name>Great Tit</name>
+	  <sciname>Parus major</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Parus_major_2_Luc_Viatour.jpg/200px-Parus_major_2_Luc_Viatour.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Parus_major_2_Luc_Viatour.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Lviatour">Luc Viatour</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Great_Tit</link>
+	  <mp3 src="http://species-id.net/o/media/b/b0/Parus_major_TSA-medium.mp3" length="0:22"/>
+	  <abs>The Great Tit (Parus major) is a passerine bird in the tit family Paridae. It is a widespread and common species throughout Europe, the Middle East, Central and Northern Asia, and parts of North Africa in any sort of woodland. It is generally resident, and most Great Tits do not migrate except in extremely harsh winters. Until 2005 this species was lumped with numerous other subspecies. DNA studies have shown these other subspecies to be distinctive from the Great Tit and these have now been separated as two separate species, the Cinereous Tit of southern Asia, and the Japanese Tit of East Asia. The Great Tit remains the most widespread species in the genus Parus. The Great Tit is a distinctive bird, with a black head and neck, prominent white cheeks, olive upperparts and yellow underparts, with some variation amongst the numerous subspecies. It is predominantly insectivorous in the summer, but will consume a wider range of food items in the winter months, including small hibernating bats. Like all tits it is a cavity nester, usually nesting in a hole in a tree. The female lays around 12 eggs and incubates them alone, although both parents raise the chicks. In most years the pair will raise two broods. The nests may be raided by woodpeckers, squirrels and weasels and infested with fleas, and adults may be hunted by Sparrowhawks. The Great Tit has adapted well to human changes in the environment and is a common and familiar bird in urban parks and gardens. The Great Tit is also an important study species in ornithology.</abs>
+	</bird>
+	<bird id="28">
+	  <name>Great Cormorant</name>
+	  <sciname>Phalacrocorax carbo</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Phalacrocorax_carbo_ja01.jpg/200px-Phalacrocorax_carbo_ja01.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Phalacrocorax_carbo_ja01.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</lizenz>
+		<author href="http://commons.wikimedia.org/wiki/User:Miya">Miya</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Great_Cormorant</link>
+	  <mp3 src="http://species-id.net/o/media/4/48/Phalacrocorax_carbo_TSA-medium.mp3" length="0:21"/>
+	  <abs>The Great Cormorant (Phalacrocorax carbo), known as the Great Black Cormorant across the Northern Hemisphere, the Black Cormorant in Australia, the Large Cormorant in India and the Black Shag further south in New Zealand, is a widespread member of the cormorant family of seabirds. It breeds in much of the Old World and the Atlantic coast of North America.</abs>
+	</bird>
+	<bird id="29">
+	  <name>Magpie</name>
+	  <sciname>Pica pica</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pica_pica_-Helsinki,_Finland-8a.jpg/200px-Pica_pica_-Helsinki,_Finland-8a.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Pica_pica_-Helsinki,_Finland-8a.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</lizenz>
+		<author href="http://www.flickr.com/photos/35599069@N07">Teemu Lehtinen</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Eurasian_Magpie</link>
+	  <mp3 src="http://species-id.net/o/media/2/25/Pica_pica_TSA-medium.mp3" length="0:23"/>
+	  <abs>The Eurasian Magpie, European Magpie, or Common Magpie, (Pica pica), is a resident breeding bird throughout Europe, much of Asia and northwest Africa. It is one of several birds in the crow family named as magpies, and belongs to the Holarctic radiation of "monochrome" magpies. In Europe, "Magpie" is used by English speakers as a synonym for the European Magpie; it is the only magpie in Europe outside the Iberian Peninsula. The Eurasian Magpie is one of the most intelligent birds, and it is believed to be one of the most intelligent of all animals. The expansion of its nidopallium is approximately the same in its relative size as is found in chimpanzees, orangutans and humans.</abs>
+	</bird>
+	<bird id="30">
+	  <name>Kestrel</name>
+	  <sciname>Falco tinnunculus</sciname>
+	  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Common_kestrel_falco_tinnunculus.jpg/200px-Common_kestrel_falco_tinnunculus.jpg">
+		<link href="http://commons.wikimedia.org/wiki/File:Common_kestrel_falco_tinnunculus.jpg"/>
+		<lizenz href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</lizenz>
+		<author href="http://photo-natur.de/">Andreas Trepte</author>
+	  </img>
+	  <link>http://en.wikipedia.org/wiki/Common_Kestrel</link>
+	  <mp3 src="http://species-id.net/o/media/6/6a/Falco_tinnunculus_TSA-medium.mp3" length="0:26"/>
+	  <abs>The Common Kestrel (Falco tinnunculus) is a bird of prey species belonging to the kestrel group of the falcon family Falconidae. It is also known as the European Kestrel, Eurasian Kestrel, or Old World Kestrel. In Britain, where no other brown falcon occurs, it is generally just called "the kestrel". This species occurs over a large range. It is widespread in Europe, Asia, and Africa, as well as occasionally reaching the east coast of North America. But although it has colonized a few oceanic islands, vagrant individuals are generally rare; in the whole of Micronesia for example, the species was only recorded twice each on Guam and Saipan in the Marianas.</abs>
+	</bird>
+</birds>

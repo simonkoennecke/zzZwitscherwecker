@@ -15,6 +15,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.app.AlarmManager;
+import android.view.WindowManager;
+import android.view.WindowManager.LayoutParams;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -30,12 +32,25 @@ public class ChromeAlarms extends CordovaPlugin {
     private AlarmManager alarmManager;
 
     public static void triggerAlarm(Context context, Intent intent) {
-        if (webView != null) {
+        //http://stackoverflow.com/questions/17699047/need-to-run-my-app-before-the-unlock-screen-in-android        
+        cordova.getActivity().getWindow().addFlags(524288 //WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+                            | 1//WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+        // Turn on the screen unless we are being launched from the AlarmAlert
+        // subclass.
+        if (!this.cordova.getActivity().getIntent().getBooleanExtra(SCREEN_OFF, false)) {
+            win.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+                    | WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
+                    | WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON);
+        }
+
+        if (webView != null) {            
             String name = intent.getStringExtra(ALARM_NAME_LABEL);
             String javascript = "chrome.alarms.triggerAlarm('" + name + "')";
-            webView.sendJavascript(javascript);
+            webView.sendJavascript(javascript);            
         } else {
             intent.addFlags(Intent.FLAG_FROM_BACKGROUND);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             context.startActivity(intent);
         }
     }

@@ -31,8 +31,8 @@
 			<fieldset>
 				<label for="select-based-flipswitch"></label>
 				<select id="status" data-role="flipswitch">
-				  <option value="off">Aus</option>
-				  <option value="on">An</option>
+				  <option value="off">Off</option>
+				  <option value="on">On</option>
 				</select>
 			</fieldset>
 		</div>
@@ -46,17 +46,17 @@
 			<input type="time" name="time" id="time"/>
 		</div>
 		<input class="repeat" type="checkbox" name="repeat_once" id="repeat_once" value="once" checked="checked">
-		<label for="repeat_once">Nur einmal</label>
+		<label for="repeat_once">Once</label>
 		<input class="repeat" type="checkbox" name="repeat_multiply" id="repeat_multiply" value="multiply">	
-		<label for="repeat_multiply">Wiederholen</label>
+		<label for="repeat_multiply">Repeat</label>
 		<div data-role="controlgroup" data-type="horizontal" style="display: none;">
-		  <input type="button" class="ui-btn" value="Mo" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="Di" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="Mi" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="Do" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="Fr" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="Sa" data-theme="b"/>
-		  <input type="button" class="ui-btn" value="So" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="MON" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="TUE" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="WED" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="THU" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="FRI" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="SAT" data-theme="b"/>
+		  <input type="button" class="ui-btn" value="SUN" data-theme="b"/>
 		</div>
 		<input type="hidden" value="" name="day[]"/>
 	</form>
@@ -73,7 +73,7 @@
 			<div id="quizdetails"><span class="time">06:30</span><br/><span class="date">Freitag, 13.06.2013</span></div>
 			<div style="clear:both;"></div>
 		</div>
-		<h2>Welcher Vogel ist zu hören?</h2>
+		<h2>Who is chirping?</h2>
 		<div id="soundplayer"></div>
 		<div id="quiz_output">
 		</div>
@@ -140,8 +140,8 @@
 			<div data-role="collapsible" data-content-theme="b">
 			<h4>Credentials</h4>
 			<ul>
-				<li>Vogelstimmen wurden vom <a href="http://www.naturkundemuseum-berlin.de/" target="_blank">Museum für Naturkunde Berlin</a> <a href="http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN" target="_blank">hier</a> zur Verfügung geste (Creative Commons (CC BY-SA 3.0))</li>
-				<li>Vogelbilder und kurz Zusammenfassung kommen aus der <a href="http://de.wikipedia.org/" target="_blank">Wikipedia</a> und wurde mit der <a href="http://dbpedia.org/" target="_blank">DBpedia</a> abgerufen</li>
+				<li>Birdcalls provide by  <a href="http://www.naturkundemuseum-berlin.de/" target="_blank">Museum für Naturkunde Berlin</a> <a href="http://species-id.net/openmedia/Category:Media_by_Tierstimmenarchiv_MfN" target="_blank">here you can download it</a> (Creative Commons (CC BY-SA 3.0))</li>
+				<li>Abstracts come from <a href="http://www.wikipedia.org/" target="_blank">Wikipedia</a> and was loaded with <a href="http://dbpedia.org/" target="_blank">DBpedia</a>.</li>
 				<li>Die App basiert auf <a href="http://cordova.apache.org/" target="_blank">Apache Cordova</a> (Apache License, Version 2.0) dabei kam <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> (MIT license) und <a href="https://jquery.org/" target="_blank">jQuery</a> (MIT license) zum einsatz</li>
 				<li>Apache Cordova Plugins:
 						<ul>
@@ -150,19 +150,19 @@
 						</ul>
 				</li>
 			</ul>
+			<ul id="output_list"><li><a href="">Uhu</a> is from <a href="http://de.wikipedia.org/wiki/Benutzer:Softeis">Softeis</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.de">Creative-Commons-Lizenz 3.0</a></li><li><a href="">Blaukehlchen</a> is from <a href="http://commons.wikimedia.org/wiki/User:Bogomolov.PL">Bogomolov.PL</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative-Commons-Lizenz 3.0</a></li><li><a href="">Heidelerche</a> is from <a href="http://www.flickr.com/people/32639361@N02">Rodrigo de Almeida</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative-Commons-Lizenz 2.0</a></li><li><a href="">Steinkauz</a> is from <a href="http://flickr.com/photos/chausinho/">Arturo Nikolai</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en">Creative-Commons-Lizenz 2.0</a></li><li><a href="">Pirol</a> is from <a href="http://pl.wikipedia.org/wiki/Wikipedysta:Dixi">Dixi</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative-Commons-Lizenz 3.0</a></li><li><a href="">Singschwan</a> is from <a href="http://photo-natur.de/">Andreas Trepte</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</a></li><li><a href="">Gartenrotschwanz</a> is from <a href="http://en.wikipedia.org/wiki/User:Debot">Debot</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Nachtigall</a> is from <a href="http://commons.wikimedia.org/wiki/User:Bogbumper">J. Dietrich</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Silbermöwe</a> is from <a href="http://commons.wikimedia.org/wiki/User:Kulac">Kulac</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</a></li><li><a href="">Fitis</a> is from <a href="http://photo-natur.de/">Andreas Trepte</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</a></li><li><a href="">Stieglitz</a> is from <a href="http://commons.wikimedia.org/wiki/User:Kookaburra_81">Pierre Dalous</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Feldsperling</a> is from <a href="http://commons.wikimedia.org/wiki/User:Laitche">Laitche</a>. The picture is under Lizenz  <a href="http://commons.wikimedia.org/wiki/File:Tree_Sparrow_Japan_Flip.jpg">Public domain</a></li><li><a href="">Goldammer</a> is from <a href="http://flickr.com/photos/32541690@N02">Alan Vernon</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</a></li><li><a href="">Zilpzalp, Weidenlaubsänger</a> is from <a href="http://commons.wikimedia.org/wiki/User:Biopics">Hans Hillewaert</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Graugans</a> is from <a href="http://commons.wikimedia.org/wiki/User:H005">H005</a>. The picture is under Lizenz  <a href="http://commons.wikimedia.org/wiki/File:Graugans_Anser_Anser.jpg">Public domain</a></li><li><a href="">Eichelhäher</a> is from <a href="http://commons.wikimedia.org/wiki/User:Lviatour">Luc Viatour</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Buntspecht</a> is from <a href="http://www.vogelruf.de/galerie/">Steffen Hannert</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/3.0/deed.en">Creative Commons Attribution 3.0 Unported</a></li><li><a href="">Blässhuhn</a> is from <a href="http://en.wikipedia.org/wiki/User:Noodle_snacks">Noodle snacks</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Rotkehlchen</a> is from <a href="PierreSelim">PierreSelim</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Graureiher</a> is from <a href="http://commons.wikimedia.org/wiki/User:JJ_Harrison">JJ Harrison</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Mäusebussard</a> is from <a href="http://www.flickr.com/people/19901746@N00">Arend</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</a></li><li><a href="">Rabenkrähe</a> is from <a href="http://de.wikipedia.org/wiki/Benutzer:BS_Thurner_Hof">BS Thurner Hof</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Ringeltaube</a> is from <a href="http://www.flickr.com/people/89056504@N00">Tristan Ferne</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</a></li><li><a href="">Mehlschwalbe</a> is from <a href="http://www.flickr.com/people/29174969@N00">Ómar Runólfsson</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</a></li><li><a href="">Buchfink</a> is from <a href="http://photo-natur.de/">Andreas Trepte</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</a></li><li><a href="">Kranich</a> is from <a href="http://commons.wikimedia.org/wiki/User:Pkuczynski/Marek_Szczepanek">Marek Szczepanek</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Kohlmeise</a> is from <a href="http://commons.wikimedia.org/wiki/User:Lviatour">Luc Viatour</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Kormoran</a> is from <a href="http://commons.wikimedia.org/wiki/User:Miya">Miya</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-Share Alike 3.0 Unported</a></li><li><a href="">Elster</a> is from <a href="http://www.flickr.com/photos/35599069@N07">Teemu Lehtinen</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic</a></li><li><a href="">Turmfalke</a> is from <a href="http://photo-natur.de/">Andreas Trepte</a>. The picture is under Lizenz  <a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">Creative Commons Attribution-Share Alike 2.5 Generic</a></li></ul>
 		</div>
 			<div data-role="collapsible" data-content-theme="b">
-			<h4>Datenschutz</h4>
-					<p>Wir möchten Sie drauf hinweisen, dass die App mit einem Server Kommuniziert. Es werden keine Person bezogenen Daten erhoben. Nach einem Quiz werden an <a href="http://www.farbtrommel.de/zwitscherwecker/" target="_blank">www.farbtrommel.de</a> folgende Werte übermittelt:</p>
+			<h4>Data Privacy</h4>
+			<p>The App sends after a Alarm to <a href="http://www.farbtrommel.de/zwitscherwecker/" target="_blank">www.farbtrommel.de</a> following data:</p>
 			<ul>
-				<li>Weckerzeit</li>
-				<li>Dauer</li>
-				<li>Anzahl der Versuche</li>
-				<li>Auswahlmöglichkeiten</li>
-				<li>Richtige Antwort</li>
-				<li>Anonymisierte UUID </li>
+				<li>Wake-up time</li>
+				<li>Duration</li>
+				<li>Number of tries</li>
+				<li>Possible answers</li>
+				<li>Right answer</li>
 			</ul>
-			<p>Alle erhobene Daten werden unter  <a href="http://www.farbtrommel.de/zwitscherwecker/stats" target="_blank">www.farbtrommel.de</a> veröffentlicht.</p>
+			<p>All collected data are published under  <a href="http://www.farbtrommel.de/zwitscherwecker/stats" target="_blank">www.farbtrommel.de</a>.</p>
 			</div>
 		</div>
 	</div>
